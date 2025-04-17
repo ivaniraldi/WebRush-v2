@@ -105,7 +105,7 @@ export default function Navbar() {
           : "bg-transparent py-4"
       }`}
     >
-      <div className="w-full max-w-[100vw] px-4 md:px-6 lg:px-8">
+      <div className="w-full max-w-full px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <motion.div

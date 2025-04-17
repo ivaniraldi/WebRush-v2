@@ -1,35 +1,26 @@
 "use client"
 
-import { useEffect, useState, useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
 
 export default function ParallaxHero({
+  backgroundImage,
+  height = "100vh",
   title,
   subtitle,
-  backgroundImage = "/placeholder.svg?height=1080&width=1920",
-  height = "70vh",
   children,
   alignment = "center",
 }) {
-  const [windowHeight, setWindowHeight] = useState(0)
   const ref = useRef(null)
-  const { scrollY } = useScroll()
+  const { scrollY } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  })
 
-  const y = useTransform(scrollY, [0, windowHeight], [0, windowHeight * 0.3])
-  const opacity = useTransform(scrollY, [0, windowHeight * 0.5], [1, 0.3])
-  const scale = useTransform(scrollY, [0, windowHeight * 0.5], [1, 1.1])
-  const textY = useTransform(scrollY, [0, windowHeight * 0.5], [0, windowHeight * 0.1])
-
-  useEffect(() => {
-    setWindowHeight(window.innerHeight)
-
-    const handleResize = () => {
-      setWindowHeight(window.innerHeight)
-    }
-
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  const y = useTransform(scrollY, [0, 1000], [0, 300])
+  const scale = useTransform(scrollY, [0, 1000], [1, 1.2])
+  const textY = useTransform(scrollY, [0, 1000], [0, 100])
+  const opacity = useTransform(scrollY, [0, 300], [1, 0])
 
   return (
     <div ref={ref} className="relative overflow-hidden flex items-center justify-center" style={{ height }}>
@@ -47,7 +38,7 @@ export default function ParallaxHero({
         <div className="absolute inset-0 bg-gray-900/60 z-20"></div>
       </motion.div>
 
-      <div className="container mx-auto px-4 z-30 relative">
+      <div className="container mx-auto px-4 z-30 relative max-w-full overflow-hidden">
         <motion.div className={`max-w-4xl mx-auto text-${alignment}`} style={{ y: textY, opacity }}>
           {title && (
             <motion.h1
