@@ -105,7 +105,7 @@ export default function Navbar() {
           : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="w-full max-w-[100vw] px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <motion.div
@@ -265,22 +265,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center space-x-4 md:hidden">
-            <motion.button
-              onClick={toggleTheme}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
-              aria-label={
-                theme === "dark"
-                  ? "Switch to light mode"
-                  : "Switch to dark mode"
-              }
-            >
-              <span className="material-icons text-xl">
-                {theme === "dark" ? "light_mode" : "dark_mode"}
-              </span>
-            </motion.button>
-
             <motion.button
               className="text-gray-900 dark:text-white focus:outline-none"
               onClick={toggleMenu}

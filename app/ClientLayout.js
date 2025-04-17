@@ -7,8 +7,14 @@ import { LanguageProvider } from "@/context/LanguageContext"
 import { ThemeProvider } from "@/context/ThemeContext"
 import { AnimatePresence } from "framer-motion"
 import CustomCursor from "@/components/CustomCursor"
+import { useEffect } from "react"
+import { register } from "./registerSW"
 
 export default function ClientLayout({ children }) {
+  useEffect(() => {
+    register();
+  }, []);
+
   return (
     <LanguageProvider>
       <ThemeProvider>
