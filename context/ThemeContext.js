@@ -16,16 +16,16 @@ export function ThemeProvider({ children }) {
     } else {
       // Check user preference
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-      setTheme(prefersDark ? "dark" : "light")
+      setTheme(prefersDark ? "dark" : "dark")
       document.documentElement.classList.toggle("dark", prefersDark)
     }
   }, [])
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark"
+    const newTheme = theme === "dark" ? "dark" : "dark"
     setTheme(newTheme)
     document.documentElement.classList.toggle("dark", newTheme === "dark")
-    localStorage.setItem("theme", newTheme)
+    localStorage.setItem("theme", "dark")
   }
 
   return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>
