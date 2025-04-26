@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { useLanguage } from "@/context/LanguageContext"
-import translations from "@/translations"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
+import translations from "@/translations";
 
 export default function Footer() {
-  const { language } = useLanguage()
-  const t = translations[language]
+  const { language } = useLanguage();
+  const t = translations[language];
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const services = [
     { name: t.footer.pwaDev, href: "/servicios/desarrollo" },
     { name: t.footer.digitalMarketing, href: "/servicios/marketing" },
     { name: t.footer.qualityControl, href: "/servicios/quality-assurance" },
-  ]
+  ];
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 pt-16 pb-8 transition-colors duration-300">
@@ -29,10 +29,16 @@ export default function Footer() {
             className="lg:col-span-1"
           >
             <Link href="/" className="flex items-center mb-4">
-              <span className="text-2xl font-bold gradient-text font-heading">WebRush</span>
-              <span className="text-2xl font-bold ml-1 text-gray-900 dark:text-white font-heading">Brasil</span>
+              <span className="text-2xl font-bold gradient-text font-heading">
+                WebRush
+              </span>
+              <span className="text-2xl font-bold ml-1 text-gray-900 dark:text-white font-heading">
+                Brasil
+              </span>
             </Link>
-            <p className="text-gray-700 dark:text-gray-300 mb-4 font-body">{t.footer.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 mb-4 font-body">
+              {t.footer.description}
+            </p>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/people/WebRush-Brasil/61574912904790/"
@@ -40,7 +46,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 target="_blank"
               >
-                <i class="fa-brands fa-square-facebook text-2xl"></i>
+                <i className="fa-brands fa-square-facebook text-2xl"></i>
               </a>
               <a
                 href="https://www.instagram.com/webrush_br/"
@@ -56,7 +62,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin text-2xl"></i>
+                <i className="fa-brands fa-linkedin text-2xl"></i>
               </a>
               <a
                 href="https://x.com/WebRushBrasil"
@@ -64,7 +70,7 @@ export default function Footer() {
                 aria-label="Twitter"
                 target="_blank"
               >
-                <i class="fa-brands fa-square-x-twitter text-2xl"></i>
+                <i className="fa-brands fa-square-x-twitter text-2xl"></i>
               </a>
             </div>
           </motion.div>
@@ -76,7 +82,9 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white font-heading">{t.footer.services}</h3>
+            <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white font-heading">
+              {t.footer.services}
+            </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
               {services.map((service, index) => (
                 <div key={index} className="mb-2">
@@ -98,23 +106,41 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white font-heading">{t.footer.contact}</h3>
+            <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white font-heading">
+              {t.footer.contact}
+            </h3>
             <ul className="space-y-2">
               <li className="flex items-start">
-                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">location_on</span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">Santa Catarina, Brasil</span>
+                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
+                  location_on
+                </span>
+                <span className="text-gray-700 dark:text-gray-300 font-body">
+                  Santa Catarina, Brasil
+                </span>
               </li>
               <li className="flex items-start">
-                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">email</span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">contato@webrushbrasil.com.br</span>
+                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
+                  email
+                </span>
+                <span className="text-gray-700 dark:text-gray-300 font-body">
+                  contato@webrushbrasil.com.br
+                </span>
               </li>
               <li className="flex items-start">
-                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">phone_in_talk</span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">+55 (48) 9205-8069</span>
+                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
+                  phone_in_talk
+                </span>
+                <span className="text-gray-700 dark:text-gray-300 font-body">
+                  +55 (48) 9205-8069
+                </span>
               </li>
               <li className="flex items-start">
-                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">schedule</span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">{t.footer.hours}</span>
+                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
+                  schedule
+                </span>
+                <span className="text-gray-700 dark:text-gray-300 font-body">
+                  {t.footer.hours}
+                </span>
               </li>
             </ul>
 
@@ -124,7 +150,9 @@ export default function Footer() {
                 className="inline-flex items-center px-4 py-2 rounded-md bg-gradient-to-r from-[#a855f7] to-[#2563eb] text-white font-medium hover:opacity-90 transition-opacity font-body text-sm"
               >
                 {t.footer.getInTouch}
-                <span className="material-icons ml-1 text-sm">arrow_forward</span>
+                <span className="material-icons ml-1 text-sm">
+                  arrow_forward
+                </span>
               </Link>
             </div>
           </motion.div>
@@ -159,5 +187,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
