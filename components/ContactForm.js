@@ -53,6 +53,14 @@ export default function ContactForm() {
     blur: { scale: 1, transition: { duration: 0.2 } },
   }
 
+  // Definir servicios por defecto en caso de que no existan en las traducciones
+  const serviceOptions = {
+    webDev: t.contact.services?.webDev || "Desarrollo Web",
+    marketing: t.contact.services?.marketing || "Marketing Digital",
+    seo: t.contact.services?.seo || "SEO",
+    other: t.contact.services?.other || "Otro"
+  }
+
   return (
     <div className="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">{t.contact.formTitle}</h2>
@@ -63,7 +71,7 @@ export default function ContactForm() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-green-500/20 border border-green-500 text-green-700 dark:text-green-300 p-4 rounded-md"
         >
-          <p>{t.contact.successMessage}</p>
+          <p>{t.contact.successMessage || "¡Mensaje enviado con éxito!"}</p>
         </motion.div>
       ) : (
         <form onSubmit={handleSubmit}>
@@ -104,7 +112,7 @@ export default function ContactForm() {
 
             <div>
               <label htmlFor="phone" className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
-                {t.contact.phoneLabel}
+                {t.contact.phoneLabel || "Teléfono"}
               </label>
               <motion.div variants={inputVariants} whileFocus="focus" whileTap="focus" animate="blur">
                 <input
@@ -120,7 +128,7 @@ export default function ContactForm() {
 
             <div>
               <label htmlFor="service" className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
-                {t.contact.serviceLabel}
+                {t.contact.serviceLabel || "Servicio de Interés"}
               </label>
               <motion.div variants={inputVariants} whileFocus="focus" whileTap="focus" animate="blur">
                 <select
@@ -131,11 +139,11 @@ export default function ContactForm() {
                   required
                   className="w-full px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-[#a855f7] transition-all text-gray-900 dark:text-white"
                 >
-                  <option value="">{t.contact.selectService}</option>
-                  <option value="web-development">{t.contact.services.webDev}</option>
-                  <option value="marketing">{t.contact.services.marketing}</option>
-                  <option value="seo">{t.contact.services.seo}</option>
-                  <option value="other">{t.contact.services.other}</option>
+                  <option value="">{t.contact.selectService || "Selecciona un servicio"}</option>
+                  <option value="web-development">{serviceOptions.webDev}</option>
+                  <option value="marketing">{serviceOptions.marketing}</option>
+                  <option value="seo">{serviceOptions.seo}</option>
+                  <option value="other">{serviceOptions.other}</option>
                 </select>
               </motion.div>
             </div>
@@ -167,7 +175,7 @@ export default function ContactForm() {
               {isSubmitting ? (
                 <span className="flex items-center justify-center">
                   <span className="material-icons animate-spin mr-2">refresh</span>
-                  {t.contact.submitting}
+                  {t.contact.submitting || "Enviando..."}
                 </span>
               ) : (
                 t.contact.submitButton

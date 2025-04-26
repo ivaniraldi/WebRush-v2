@@ -25,18 +25,18 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 text-white font-heading mt-[30px] md:mt-0"
+            className="text-xl md:text-6xl font-bold mb-4 md:mb-6 text-white font-heading md:mt-0"
           >
-            <span className="block">{t.hero.transformamos}</span>
-            <span className="block text-4xl md:text-7xl gradient-text my-1 md:my-2">{t.hero.cliques}</span>
-            <span className="block">{t.hero.emConexoes}</span>
+            <span className="block text-2xl">{t.hero.transformamos}</span>
+            <span className="block text-3xl font-extrabold md:text-7xl gradient-text my-1 md:my-2">{t.hero.cliques}</span>
+            <span className="block text 3xl">{t.hero.emConexoes}</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-base md:text-xl text-gray-200 mb-6 md:mb-8 max-w-2xl mx-auto font-body"
+            className="text-xs md:text-xl text-gray-200 mb-6 md:mb-8 max-w-2xl mx-auto font-body"
           >
             {t.hero.description}
           </motion.p>
@@ -95,8 +95,6 @@ export default function Home() {
         <VideoSection />
 
         <Differentials />
-
-        <Projects />
 
         <ContactCTA />
       </div>

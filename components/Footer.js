@@ -12,14 +12,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const services = [
-    { name: t.footer.webDevelopment, href: "/servicios/desarrollo" },
-    { name: t.footer.mobileAppDev, href: "/servicios/desarrollo" },
     { name: t.footer.pwaDev, href: "/servicios/desarrollo" },
-    { name: t.footer.pcAppDev, href: "/servicios/desarrollo" },
     { name: t.footer.digitalMarketing, href: "/servicios/marketing" },
-    { name: t.footer.organicTraffic, href: "/servicios/marketing" },
-    { name: t.footer.paidTraffic, href: "/servicios/marketing" },
-    { name: t.footer.qaServices, href: "/servicios/quality-assurance" },
     { name: t.footer.qualityControl, href: "/servicios/quality-assurance" },
   ]
 
@@ -41,32 +35,36 @@ export default function Footer() {
             <p className="text-gray-700 dark:text-gray-300 mb-4 font-body">{t.footer.description}</p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/people/WebRush-Brasil/61574912904790/"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Facebook"
+                target="_blank"
               >
-                <span className="material-icons">facebook</span>
+                <i class="fa-brands fa-square-facebook text-2xl"></i>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/webrush_br/"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Instagram"
+                target="_blank"
               >
-                <span className="material-icons">instagram</span>
+                <i className="fa-brands fa-instagram text-2xl"></i>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/webrush-brasil/"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="LinkedIn"
+                target="_blank"
               >
-                <span className="material-icons">linkedin</span>
+                <i class="fa-brands fa-linkedin text-2xl"></i>
               </a>
               <a
-                href="#"
+                href="https://x.com/WebRushBrasil"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Twitter"
+                target="_blank"
               >
-                <span className="material-icons">twitter</span>
+                <i class="fa-brands fa-square-x-twitter text-2xl"></i>
               </a>
             </div>
           </motion.div>
@@ -111,8 +109,8 @@ export default function Footer() {
                 <span className="text-gray-700 dark:text-gray-300 font-body">contato@webrushbrasil.com.br</span>
               </li>
               <li className="flex items-start">
-                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">phone</span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">+55 (48) 9999-9999</span>
+                <span className="material-icons mr-2 text-[#a855f7] mt-0.5">phone_in_talk</span>
+                <span className="text-gray-700 dark:text-gray-300 font-body">+55 (48) 9205-8069</span>
               </li>
               <li className="flex items-start">
                 <span className="material-icons mr-2 text-[#a855f7] mt-0.5">schedule</span>
@@ -137,7 +135,7 @@ export default function Footer() {
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0 font-body">
               &copy; {currentYear} WebRush Brasil. {t.footer.rights}
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="hidden flex-wrap justify-center gap-4">
               <Link
                 href="#"
                 className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"

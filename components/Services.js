@@ -24,7 +24,7 @@ export default function Services() {
     {
       title: t.services.items[2].title,
       description: t.services.items[2].description,
-      icon: "search",
+      icon: "bug_report",
       color: "from-[#9333ea] to-[#a855f7]",
     },
   ]

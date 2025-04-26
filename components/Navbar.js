@@ -15,24 +15,22 @@ export default function Navbar() {
   const [menuOverflow, setMenuOverflow] = useState(false);
   const pathname = usePathname();
   const { language, setLanguage } = useLanguage();
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme(); // Mantenemos theme para aplicar clases oscuras
   const t = translations[language];
   const servicesMenuRef = useRef(null);
   const navRef = useRef(null);
+  const mobileMenuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 10);
     };
 
     const handleClickOutside = (event) => {
       if (
         servicesMenuRef.current &&
-        !servicesMenuRef.current.contains(event.target)
+        !servicesMenuRef.current.contains(event.target) &&
+        (!mobileMenuRef.current || !mobileMenuRef.current.contains(event.target))
       ) {
         setServicesOpen(false);
       }
@@ -50,7 +48,6 @@ export default function Navbar() {
     document.addEventListener("mousedown", handleClickOutside);
     window.addEventListener("resize", checkOverflow);
 
-    // Initial check
     checkOverflow();
 
     return () => {
@@ -60,16 +57,19 @@ export default function Navbar() {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
+  useEffect(() => {
+    setServicesOpen(false);
     setIsOpen(false);
+  }, [pathname]);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+    setServicesOpen(false);
   };
 
-  const toggleServicesMenu = () => {
-    setServicesOpen(!servicesOpen);
+  const toggleServicesMenu = (e) => {
+    e.stopPropagation();
+    setServicesOpen((prev) => !prev);
   };
 
   const navLinks = [
@@ -99,11 +99,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/95 dark:bg-[#0f172a]/75 backdrop-blur-md shadow-lg py-2"
+          ? "bg-[#0f172a]/75 backdrop-blur-md shadow-lg py-2"
           : "bg-transparent py-4"
-      }`}
+      } overflow-visible`}
     >
       <div className="w-full max-w-full px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -112,15 +112,13 @@ export default function Navbar() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="relative z-10"
+              className="relative z-[1010]"
             >
               <img
                 src="https://i.imgur.com/tzKGe47.png"
                 alt="WebRush Brasil Logo"
-                className={`h-7 md:h-12 ${theme === "dark" ? "invert" : ""}`}
+                className="h-7 my-3 md:my-0 md:h-12 invert" // Siempre invertido para tema oscuro
               />
-              {/* <span className="text-2xl font-bold gradient-text font-heading">WebRush</span>
-              <span className="text-2xl font-bold ml-1 text-gray-900 dark:text-white font-heading">Brasil</span> */}
             </motion.div>
           </Link>
 
@@ -142,14 +140,16 @@ export default function Navbar() {
                   ref={link.hasSubmenu ? servicesMenuRef : null}
                 >
                   {link.hasSubmenu ? (
-                    <div className="relative">
+                    <div className="relative z-50">
                       <button
                         onClick={toggleServicesMenu}
                         className={`text-sm font-medium transition-colors hover:text-[#a855f7] flex items-center nav-link ${
                           pathname.includes(link.href)
                             ? "text-[#a855f7]"
-                            : "text-gray-900 dark:text-white"
+                            : "text-white"
                         } font-body`}
+                        aria-expanded={servicesOpen}
+                        aria-haspopup="true"
                       >
                         {link.label}
                         <span className="material-icons text-sm ml-1">
@@ -164,7 +164,7 @@ export default function Navbar() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 10 }}
                             transition={{ duration: 0.2 }}
-                            className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-50"
+                            className="absolute left-0 mt-6 w-56 rounded-md shadow-lg bg-gray-800 ring-1 ring-black ring-opacity-5 z-[1020] min-w-max overflow-visible"
                           >
                             <div
                               className="py-1"
@@ -175,10 +175,10 @@ export default function Navbar() {
                                 <Link
                                   key={subItem.href}
                                   href={subItem.href}
-                                  className={`block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 ${
+                                  className={`block px-4 py-2 text-sm hover:bg-gray-700 ${
                                     pathname === subItem.href
                                       ? "text-[#a855f7]"
-                                      : "text-gray-900 dark:text-white"
+                                      : "text-white"
                                   } font-body`}
                                   onClick={() => setServicesOpen(false)}
                                 >
@@ -196,7 +196,7 @@ export default function Navbar() {
                       className={`text-sm font-medium transition-colors hover:text-[#a855f7] nav-link ${
                         pathname === link.href
                           ? "text-[#a855f7]"
-                          : "text-gray-900 dark:text-white"
+                          : "text-white"
                       } font-body`}
                     >
                       {link.label}
@@ -207,66 +207,29 @@ export default function Navbar() {
             </nav>
 
             <div className="flex items-center ml-6 space-x-4">
-              <motion.button
-                onClick={toggleTheme}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="hidden px-2 py-1 text-xs rounded font-medium bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
-                aria-label={
-                  theme === "dark"
-                    ? "Switch to light mode"
-                    : "Switch to dark mode"
-                }
-              >
-                <span className="material-icons text-xl">
-                  {theme === "dark" ? "light_mode" : "dark_mode"}
-                </span>
-              </motion.button>
-
               <div className="flex items-center space-x-2">
-                <motion.button
-                  onClick={() => setLanguage("pt")}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`px-2 py-1 text-xs rounded font-medium ${
-                    language === "pt"
-                      ? "bg-[#a855f7] text-white"
-                      : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300"
-                  } font-body`}
-                >
-                  PT
-                </motion.button>
-                <motion.button
-                  onClick={() => setLanguage("es")}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`px-2 py-1 text-xs rounded font-medium ${
-                    language === "es"
-                      ? "bg-[#a855f7] text-white"
-                      : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300"
-                  } font-body`}
-                >
-                  ES
-                </motion.button>
-                <motion.button
-                  onClick={() => setLanguage("en")}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`px-2 py-1 text-xs rounded font-medium ${
-                    language === "en"
-                      ? "bg-[#a855f7] text-white"
-                      : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300"
-                  } font-body`}
-                >
-                  EN
-                </motion.button>
+                {["pt", "es", "en"].map((lang) => (
+                  <motion.button
+                    key={lang}
+                    onClick={() => setLanguage(lang)}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`px-2 py-1 text-xs rounded font-medium ${
+                      language === lang
+                        ? "bg-[#a855f7] text-white"
+                        : "bg-gray-800 text-gray-300"
+                    } font-body`}
+                  >
+                    {lang.toUpperCase()}
+                  </motion.button>
+                ))}
               </div>
             </div>
           </div>
 
           <div className="flex items-center space-x-4 md:hidden">
             <motion.button
-              className="text-gray-900 dark:text-white focus:outline-none"
+              className="text-white focus:outline-none"
               onClick={toggleMenu}
               aria-label="Toggle menu"
               whileHover={{ scale: 1.05 }}
@@ -283,11 +246,12 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={mobileMenuRef}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white dark:bg-gray-900"
+            className="md:hidden bg-gray-900 z-[1010] overflow-visible"
           >
             <div className="container mx-auto px-4 py-4">
               <nav className="flex flex-col space-y-4">
@@ -296,12 +260,14 @@ export default function Navbar() {
                     {link.hasSubmenu ? (
                       <>
                         <button
-                          onClick={() => setServicesOpen(!servicesOpen)}
+                          onClick={toggleServicesMenu}
                           className={`text-sm font-medium transition-colors hover:text-[#a855f7] flex items-center justify-between w-full ${
                             pathname.includes(link.href)
                               ? "text-[#a855f7]"
-                              : "text-gray-900 dark:text-white"
+                              : "text-white"
                           } font-body`}
+                          aria-expanded={servicesOpen}
+                          aria-haspopup="true"
                         >
                           {link.label}
                           <span className="material-icons text-sm">
@@ -322,12 +288,15 @@ export default function Navbar() {
                                 <Link
                                   key={subItem.href}
                                   href={subItem.href}
-                                  className={`block text-sm ${
+                                  className={`block px-4 py-2 text-sm hover:bg-gray-700 ${
                                     pathname === subItem.href
                                       ? "text-[#a855f7]"
-                                      : "text-gray-900 dark:text-white"
-                                  } hover:text-[#a855f7] font-body`}
-                                  onClick={closeMenu}
+                                      : "text-white"
+                                  } font-body`}
+                                  onClick={() => {
+                                    setServicesOpen(false);
+                                    setIsOpen(false);
+                                  }}
                                 >
                                   {subItem.label}
                                 </Link>
@@ -342,9 +311,9 @@ export default function Navbar() {
                         className={`text-sm font-medium transition-colors hover:text-[#a855f7] ${
                           pathname === link.href
                             ? "text-[#a855f7]"
-                            : "text-gray-900 dark:text-white"
+                            : "text-white"
                         } font-body`}
-                        onClick={closeMenu}
+                        onClick={() => setIsOpen(false)}
                       >
                         {link.label}
                       </Link>
@@ -354,45 +323,22 @@ export default function Navbar() {
               </nav>
 
               <div className="flex items-center space-x-2 mt-4">
-                <button
-                  onClick={() => {
-                    setLanguage("pt");
-                    closeMenu();
-                  }}
-                  className={`px-2 py-1 text-xs rounded font-medium ${
-                    language === "pt"
-                      ? "bg-[#a855f7] text-white"
-                      : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300"
-                  } font-body`}
-                >
-                  PT
-                </button>
-                <button
-                  onClick={() => {
-                    setLanguage("es");
-                    closeMenu();
-                  }}
-                  className={`px-2 py-1 text-xs rounded font-medium ${
-                    language === "es"
-                      ? "bg-[#a855f7] text-white"
-                      : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300"
-                  } font-body`}
-                >
-                  ES
-                </button>
-                <button
-                  onClick={() => {
-                    setLanguage("en");
-                    closeMenu();
-                  }}
-                  className={`px-2 py-1 text-xs rounded font-medium ${
-                    language === "en"
-                      ? "bg-[#a855f7] text-white"
-                      : "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300"
-                  } font-body`}
-                >
-                  EN
-                </button>
+                {["pt", "es", "en"].map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => {
+                      setLanguage(lang);
+                      setIsOpen(false);
+                    }}
+                    className={`px-2 py-1 text-xs rounded font-medium ${
+                      language === lang
+                        ? "bg-[#a855f7] text-white"
+                        : "bg-gray-800 text-gray-300"
+                    } font-body`}
+                  >
+                    {lang.toUpperCase()}
+                  </button>
+                ))}
               </div>
             </div>
           </motion.div>

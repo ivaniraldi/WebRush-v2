@@ -27,6 +27,13 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  allowedDevOrigins: ['192.168.3.12', 'localhost'],
+  env: {
+    PORT: process.env.PORT || 3003,
+  },
+  serverRuntimeConfig: {
+    port: process.env.PORT || 3003,
+  },
 }
 
 if (userConfig) {

@@ -13,9 +13,9 @@ const translations = {
       },
     },
     hero: {
-      transformamos: "TRANSFORMAMOS",
-      cliques: "CLIQUES",
-      emConexoes: "EM CONEXÕES E RESULTADOS",
+      transformamos: "SEU SUCESSO,",
+      cliques: "NOSSA MISSÃO",
+      emConexoes: "TECNOLÓGICA",
       description:
         "Somos uma empresa especializada em desenvolvimento de software, engenharia, garantia de qualidade e marketing digital, localizada em Santa Catarina, Brasil.",
       ctaButton: "Fale Conosco",
@@ -26,26 +26,26 @@ const translations = {
       description: "Oferecemos soluções completas para impulsionar seu negócio no mundo digital.",
       items: [
         {
-          title: "Desenvolvimento Web",
-          description: "Sites responsivos, e-commerce e aplicações web personalizadas para seu negócio.",
+          title: "Desenvolvimento de Software e Apps Móveis",
+          description: "Soluções de software personalizadas, aplicativos móveis e plataformas web escaláveis adaptadas às suas necessidades.",
         },
         {
           title: "Marketing Digital",
-          description: "Estratégias de marketing digital para aumentar sua visibilidade online e gerar leads.",
+          description: "Campanhas estratégicas de marketing digital para aumentar sua presença online e gerar leads.",
         },
         {
-          title: "SEO",
-          description: "Otimização para mecanismos de busca para melhorar seu posicionamento orgânico.",
+          title: "Garantia de Qualidade",
+          description: "Testes rigorosos e garantia de qualidade para assegurar que seu software e aplicativos sejam confiáveis, seguros e de alto desempenho.",
         },
       ],
     },
     differentials: {
       title: "Por que nos escolher?",
-      description: "Conheça os diferenciais que fazem da WebRush Brasil a escolha certa para seu negócio.",
+      description: "Conheça os diferenciais que fazem da WebRush Brasil a escolha certa para o seu negócio.",
       items: [
         {
-          title: "Resultados Comprovados",
-          description: "Mais de 100 clientes satisfeitos e casos de sucesso documentados.",
+          title: "Inovação Constante",
+          description: "Implementamos soluções tecnológicas de ponta para manter seu negócio na vanguarda.",
         },
         {
           title: "Equipe Especializada",
@@ -274,7 +274,7 @@ const translations = {
       services: "Serviços",
       webDevelopment: "Desenvolvimento Web",
       mobileAppDev: "Desenvolvimento de Apps Móveis",
-      pwaDev: "Desenvolvimento PWA",
+      pwaDev: "Desenvolvimento de software",
       pcAppDev: "Desenvolvimento de Apps para PC",
       digitalMarketing: "Marketing Digital",
       organicTraffic: "Tráfego Orgânico",
@@ -512,13 +512,13 @@ const translations = {
       serviceSections: {
         development: "Desarrollo de Software",
         marketing: "Marketing Digital y Performance",
-        qa: "Garantía de Calidad",
+        qa: "Aseguramiento de Calidad",
       },
     },
     hero: {
-      transformamos: "TRANSFORMAMOS",
-      cliques: "CLICS",
-      emConexoes: "EN CONEXIONES Y RESULTADOS",
+      transformamos: "TU SUCESO,",
+      cliques: "NUESTRA MISIÓN",
+      emConexoes: "TECNOLÓGICA",
       description:
         "Somos una empresa especializada en desarrollo de software, ingeniería, aseguramiento de calidad y marketing digital, ubicada en Santa Catarina, Brasil.",
       ctaButton: "Contáctanos",
@@ -529,16 +529,16 @@ const translations = {
       description: "Ofrecemos soluciones completas para impulsar tu negocio en el mundo digital.",
       items: [
         {
-          title: "Desarrollo Web",
-          description: "Sitios web responsivos, e-commerce y aplicaciones web personalizadas para tu negocio.",
+          title: "Desarrollo de Software y Apps Móviles",
+          description: "Soluciones de software personalizadas, aplicaciones móviles y plataformas web escalables adaptadas a tus necesidades.",
         },
         {
           title: "Marketing Digital",
-          description: "Estrategias de marketing digital para aumentar tu visibilidad online y generar leads.",
+          description: "Campañas estratégicas de marketing digital para aumentar tu presencia online y generar leads.",
         },
         {
-          title: "SEO",
-          description: "Optimización para motores de búsqueda para mejorar tu posicionamiento orgánico.",
+          title: "Aseguramiento de Calidad",
+          description: "Pruebas rigurosas y aseguramiento de calidad para garantizar que tu software y aplicaciones sean fiables, seguros y de alto rendimiento.",
         },
       ],
     },
@@ -547,8 +547,8 @@ const translations = {
       description: "Conoce los diferenciales que hacen de WebRush Brasil la elección correcta para tu negocio.",
       items: [
         {
-          title: "Resultados Comprobados",
-          description: "Más de 100 clientes satisfechos y casos de éxito documentados.",
+          title: "Innovación Constante",
+          description: "Implementamos soluciones tecnológicas de vanguardia para mantener tu negocio a la delantera.",
         },
         {
           title: "Equipo Especializado",
@@ -562,11 +562,11 @@ const translations = {
     },
     projects: {
       title: "Proyectos Recientes",
-      description: "Conoce algunos de nuestros trabajos más recientes y descubre cómo podemos ayudar a tu negocio.",
+      description: "Conoce algunos de nuestros trabajos más recientes y ve cómo podemos ayudar a tu negocio.",
       blogDescription: "Blog moderno y responsivo con diseño minimalista y optimizado para SEO.",
       landingDescription: "Landing page moderna con animaciones y diseño atractivo.",
       ecommerceDescription: "Tienda online completa con carrito de compras y sistema de pagos.",
-      portfolioDescription: "Portafolio personal con diseño moderno y animaciones suaves.",
+      portfolioDescription: "Portfolio personal con diseño moderno y animaciones suaves.",
       viewProject: "Ver Proyecto",
       viewAll: "Ver Todos los Proyectos",
     },
@@ -607,12 +607,7 @@ const translations = {
         {
           title: "SEO",
           description: "Optimización para motores de búsqueda y posicionamiento orgánico.",
-          features: [
-            "Investigación de palabras clave",
-            "Optimización on-page",
-            "Link building",
-            "Análisis de competencia",
-          ],
+          features: ["Investigación de palabras clave", "Optimización on-page", "Link building", "Análisis de competencia"],
         },
       ],
       plansTitle: "Planes de Marketing",
@@ -669,7 +664,7 @@ const translations = {
         {
           title: "Gestión de Redes Sociales",
           description:
-            "Estrategias personalizadas para aumentar tu presencia en redes sociales y el engagement con tu público.",
+            "Estrategias personalizadas para aumentar tu presencia en redes sociales y engagement con tu público.",
         },
         {
           title: "Publicidad Digital",
@@ -685,8 +680,7 @@ const translations = {
       title: "Servicios Web",
       description: "Desarrollo web profesional para impulsar tu negocio online.",
       heroTitle: "Desarrollo Web Profesional",
-      heroDescription:
-        "Transforma tu presencia digital con sitios web modernos, responsivos y optimizados para resultados.",
+      heroDescription: "Transforma tu presencia digital con sitios web modernos, responsivos y optimizados para resultados.",
       ctaButton: "Solicitar Presupuesto",
       secondaryButton: "Ver Servicios",
       plans: [
@@ -722,7 +716,7 @@ const translations = {
         {
           name: "Avanzado",
           price: "R$5.000",
-          description: "Solución completa para negocios que exigen e-commerce y alto rendimiento.",
+          description: "Solución completa para negocios que requieren e-commerce y alto rendimiento.",
           features: [
             "Sitio web responsivo",
             "Páginas ilimitadas",
@@ -750,31 +744,35 @@ const translations = {
       ],
       moreFeatures: "más recursos",
       projectsTitle: "Proyectos Recientes",
-      projectsDescription:
-        "Conoce algunos de nuestros trabajos más recientes y descubre cómo podemos ayudar a tu negocio.",
+      projectsDescription: "Conoce algunos de nuestros trabajos más recientes y ve cómo podemos ayudar a tu negocio.",
     },
     contact: {
       title: "Contáctanos",
       description: "Estamos listos para ayudar a tu negocio a crecer. Contáctanos hoy mismo.",
       infoTitle: "Información de Contacto",
       formTitle: "Envía un Mensaje",
-      nameLabel: "Nombre",
-      emailLabel: "Email",
+      nameLabel: "Nombre completo",
+      emailLabel: "Correo electrónico",
       phoneLabel: "Teléfono",
       serviceLabel: "Servicio de Interés",
       messageLabel: "Mensaje",
+      submitButton: "Enviar Mensaje",
+      addressTitle: "Dirección",
+      phoneTitle: "Teléfono",
+      emailTitle: "Correo",
+      socialTitle: "Redes Sociales",
+      address: "Santa Catarina, Brasil",
+      phone: "+55 (48) 9 9999-9999",
+      email: "contacto@webrushbrasil.com",
       selectService: "Selecciona un servicio",
+      submitting: "Enviando...",
+      successMessage: "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
       services: {
         webDev: "Desarrollo Web",
         marketing: "Marketing Digital",
         seo: "SEO",
-        other: "Otro",
-      },
-      submitButton: "Enviar Mensaje",
-      submitting: "Enviando...",
-      successMessage: "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
-      hours: "Lunes a Viernes, 9h a 18h",
-      followUs: "Síguenos",
+        other: "Otro"
+      }
     },
     footer: {
       description:
@@ -784,7 +782,7 @@ const translations = {
       services: "Servicios",
       webDevelopment: "Desarrollo Web",
       mobileAppDev: "Desarrollo de Apps Móviles",
-      pwaDev: "Desarrollo PWA",
+      pwaDev: "Desarrollo de Software",
       pcAppDev: "Desarrollo de Apps para PC",
       digitalMarketing: "Marketing Digital",
       organicTraffic: "Tráfico Orgánico",
@@ -831,8 +829,7 @@ const translations = {
         },
         {
           title: "Resultados",
-          description:
-            "Enfoque en entregar resultados medibles que impactan positivamente el negocio de nuestros clientes.",
+          description: "Enfoque en entregar resultados medibles que impactan positivamente el negocio de nuestros clientes.",
         },
       ],
       team: "Nuestro Equipo",
@@ -884,13 +881,7 @@ const translations = {
         {
           title: "Desarrollo Web",
           description: "Creamos sitios y aplicaciones web modernas, responsivas y optimizadas para resultados.",
-          features: [
-            "Sitios institucionales",
-            "E-commerce",
-            "Sistemas web",
-            "Aplicaciones SaaS",
-            "Integraciones con APIs",
-          ],
+          features: ["Corporate websites", "E-commerce", "Web systems", "SaaS applications", "API integrations"],
         },
         {
           title: "Desarrollo Móvil",
@@ -963,14 +954,8 @@ const translations = {
       services: [
         {
           title: "Pruebas Manuales",
-          description:
-            "Pruebas exhaustivas realizadas por especialistas para identificar problemas y garantizar calidad.",
-          features: [
-            "Pruebas funcionales",
-            "Pruebas de usabilidad",
-            "Pruebas de compatibilidad",
-            "Pruebas de regresión",
-          ],
+          description: "Pruebas exhaustivas realizadas por especialistas para identificar problemas y garantizar calidad.",
+          features: ["Pruebas funcionales", "Pruebas de usabilidad", "Pruebas de compatibilidad", "Pruebas de regresión"],
         },
         {
           title: "Pruebas Automatizadas",
@@ -980,12 +965,7 @@ const translations = {
         {
           title: "Consultoría en QA",
           description: "Implementación de procesos y metodologías de QA en tu equipo de desarrollo.",
-          features: [
-            "Definición de estrategias de prueba",
-            "Implementación de herramientas",
-            "Capacitación de equipos",
-            "Mejora continua",
-          ],
+          features: ["Definición de estrategias de prueba", "Implementación de herramientas", "Capacitación de equipos", "Mejora continua"],
         },
       ],
       benefits: {
@@ -1020,8 +1000,7 @@ const translations = {
         },
         {
           title: "Estrategias de Marketing Digital",
-          description:
-            "Descubre nuestras estrategias de marketing digital que generan resultados para nuestros clientes.",
+          description: "Descubre nuestras estrategias de marketing digital que generan resultados para nuestros clientes.",
         },
       ],
     },
@@ -1036,7 +1015,7 @@ const translations = {
       services: "Solutions",
       successCases: "Success Stories",
       aboutUs: "About Us",
-      contact: "Get in Touch",
+      contact: "Contact Us",
       serviceSections: {
         development: "Software Development",
         marketing: "Digital Marketing & Performance",
@@ -1044,9 +1023,9 @@ const translations = {
       },
     },
     hero: {
-      transformamos: "WE TRANSFORM",
-      cliques: "CLICKS",
-      emConexoes: "INTO CONNECTIONS AND RESULTS",
+      transformamos: "YOUR SUCCESS",
+      cliques: "IS OUR",
+      emConexoes: "TECHNOLOGICAL MISSION",
       description:
         "We are a company specialized in software development, engineering, quality assurance, and digital marketing, located in Santa Catarina, Brazil.",
       ctaButton: "Contact Us",
@@ -1054,19 +1033,19 @@ const translations = {
     },
     services: {
       title: "Our Services",
-      description: "We offer complete solutions to boost your business in the digital world.",
+      description: "We provide comprehensive solutions to elevate your business in the digital landscape.",
       items: [
         {
-          title: "Web Development",
-          description: "Responsive websites, e-commerce, and custom web applications for your business.",
+          title: "Software & Mobile App Development",
+          description: "Custom software solutions, mobile applications, and scalable web platforms tailored to your business needs.",
         },
         {
           title: "Digital Marketing",
-          description: "Digital marketing strategies to increase your online visibility and generate leads.",
+          description: "Strategic digital marketing campaigns to enhance your online presence and drive lead generation.",
         },
         {
-          title: "SEO",
-          description: "Search engine optimization to improve your organic positioning.",
+          title: "Quality Assurance",
+          description: "Rigorous testing and quality assurance to ensure your software and applications are reliable, secure, and high-performing.",
         },
       ],
     },
@@ -1075,8 +1054,8 @@ const translations = {
       description: "Discover the differentials that make WebRush Brasil the right choice for your business.",
       items: [
         {
-          title: "Proven Results",
-          description: "More than 100 satisfied clients and documented success cases.",
+          title: "Constant Innovation",
+          description: "We implement cutting-edge technological solutions to keep your business ahead of the curve.",
         },
         {
           title: "Specialized Team",
@@ -1084,7 +1063,7 @@ const translations = {
         },
         {
           title: "Dedicated Support",
-          description: "Personalized service and constant monitoring of results.",
+          description: "Personalized attention and continuous monitoring of results.",
         },
       ],
     },
@@ -1106,15 +1085,15 @@ const translations = {
     },
     marketing: {
       heroTitle: "Strategies that Drive Your Business",
-      heroDescription: "Transform your digital presence with personalized strategies and measurable results.",
+      heroDescription: "Transform your digital presence with customized strategies and measurable results.",
       ctaButton: "Request a Quote",
       secondaryButton: "View Services",
       servicesTitle: "Marketing Services",
-      servicesDescription: "Discover our digital marketing solutions to boost your business.",
+      servicesDescription: "Learn about our digital marketing solutions to boost your business.",
       services: [
         {
           title: "Marketing Management",
-          description: "Personalized strategies to boost your business in the digital world.",
+          description: "Customized strategies to boost your business in the digital world.",
           features: ["Market analysis", "Strategic planning", "Social media management", "Results reporting"],
         },
         {
@@ -1149,7 +1128,7 @@ const translations = {
           price: "R$3,000",
           period: "month",
           features: [
-            "Everything in the basic plan",
+            "Everything in Basic plan",
             "Google Ads management",
             "SEO optimization",
             "Priority support",
@@ -1164,15 +1143,15 @@ const translations = {
           price: "Custom",
           period: "month",
           features: [
-            "Everything in the professional plan",
-            "Personalized strategy",
+            "Everything in Professional plan",
+            "Custom strategy",
             "Exclusive consulting",
             "Unlimited campaigns",
             "24/7 support",
             "Daily reports",
             "Access to premium tools",
           ],
-          note: "Custom price according to your needs",
+          note: "Custom pricing according to your needs",
         },
       ],
       planButton: "Get Started Now",
@@ -1182,21 +1161,21 @@ const translations = {
         {
           title: "Social Media Management",
           description:
-            "Personalized strategies to increase your presence on social media and engagement with your audience.",
+            "Customized strategies to increase your social media presence and engagement with your audience.",
         },
         {
           title: "Digital Advertising",
           description: "Effective advertising campaigns on Google Ads and social media to maximize your ROI.",
         },
         {
-          title: "SEO and Positioning",
-          description: "Optimization of your website to improve positioning in search engines.",
+          title: "SEO & Positioning",
+          description: "Optimization of your website to improve ranking in search engines.",
         },
       ],
     },
     webServices: {
       title: "Web Services",
-      description: "Professional web development to boost your business online.",
+      description: "Professional web development to boost your online business.",
       heroTitle: "Professional Web Development",
       heroDescription: "Transform your digital presence with modern, responsive websites optimized for results.",
       ctaButton: "Request a Quote",
@@ -1225,7 +1204,7 @@ const translations = {
             "Contact form",
             "Advanced SEO optimization",
             "Social media integration",
-            "Admin panel",
+            "Admin dashboard",
             "60-day support",
             "Weekly backup",
           ],
@@ -1241,7 +1220,7 @@ const translations = {
             "Contact form",
             "Advanced SEO optimization",
             "Social media integration",
-            "Admin panel",
+            "Admin dashboard",
             "90-day support",
             "Daily backup",
             "Integrated e-commerce",
@@ -1266,26 +1245,31 @@ const translations = {
     },
     contact: {
       title: "Contact Us",
-      description: "We are ready to help your business grow. Contact us today.",
+      description: "We're ready to help your business grow. Get in touch with us today.",
       infoTitle: "Contact Information",
       formTitle: "Send a Message",
-      nameLabel: "Name",
-      emailLabel: "Email",
+      nameLabel: "Full name",
+      emailLabel: "Email address",
       phoneLabel: "Phone",
       serviceLabel: "Service of Interest",
       messageLabel: "Message",
+      submitButton: "Send Message",
+      addressTitle: "Address",
+      phoneTitle: "Phone",
+      emailTitle: "Email",
+      socialTitle: "Social Media",
+      address: "Santa Catarina, Brazil",
+      phone: "+55 (48) 9 9999-9999",
+      email: "contact@webrushbrasil.com",
       selectService: "Select a service",
+      submitting: "Sending...",
+      successMessage: "Message sent successfully! We will get back to you soon.",
       services: {
         webDev: "Web Development",
         marketing: "Digital Marketing",
         seo: "SEO",
-        other: "Other",
-      },
-      submitButton: "Send Message",
-      submitting: "Sending...",
-      successMessage: "Message sent successfully! We will contact you soon.",
-      hours: "Monday to Friday, 9am to 6pm",
-      followUs: "Follow Us",
+        other: "Other"
+      }
     },
     footer: {
       description:
@@ -1295,7 +1279,7 @@ const translations = {
       services: "Services",
       webDevelopment: "Web Development",
       mobileAppDev: "Mobile App Development",
-      pwaDev: "PWA Development",
+      pwaDev: "Software & Mobile App Development",
       pcAppDev: "PC App Development",
       digitalMarketing: "Digital Marketing",
       organicTraffic: "Organic Traffic",
