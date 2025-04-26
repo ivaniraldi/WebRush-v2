@@ -92,7 +92,7 @@ export default function Navbar() {
         },
       ],
     },
-    { href: "/casos-exito", label: t.nav.successCases },
+    // { href: "/casos-exito", label: t.nav.successCases },
     { href: "/sobre-nosotros", label: t.nav.aboutUs },
     { href: "/contacto", label: t.nav.contact },
   ];

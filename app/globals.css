@@ -6,9 +6,9 @@
   --primary: #a855f7;
   --secondary: #2563eb;
   --accent: #9333ea;
-  --background-light: #ffffff;
+  --background-light: #0f172a;
   --background-dark: #0f172a;
-  --text-light: #1e293b;
+  --text-light: #f8fafc;
   --text-dark: #f8fafc;
   scroll-behavior: smooth;
 }

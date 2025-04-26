@@ -9,6 +9,7 @@ import { AnimatePresence } from "framer-motion"
 import CustomCursor from "@/components/CustomCursor"
 import { useEffect } from "react"
 import { register } from "./registerSW"
+import ChatIa from "@/components/ChatIa"
 
 export default function ClientLayout({ children }) {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function ClientLayout({ children }) {
         </main>
         <Footer />
         <CustomCursor />
+        <ChatIa />
       </ThemeProvider>
     </LanguageProvider>
   )

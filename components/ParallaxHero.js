@@ -23,7 +23,7 @@ export default function ParallaxHero({
   const opacity = useTransform(scrollY, [0, 300], [1, 0])
 
   return (
-    <div ref={ref} className="relative overflow-hidden flex items-center justify-center parallax-container" style={{ height }}>
+    <div ref={ref} className={`relative overflow-hidden flex items-center justify-center parallax-container`} style={{ height }}>
       <motion.div className="absolute inset-0 w-full h-full" style={{ y, scale }}>
         {/* Imagen de fondo */}
         <div

@@ -1,13 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useLanguage } from "@/context/LanguageContext"
-import translations from "@/translations"
+import { motion } from "framer-motion";
 
-export default function Services() {
-  const { language } = useLanguage()
-  const t = translations[language]
-
+export default function Services({ t }) {
   const services = [
     {
       title: t.services.items[0].title,
@@ -27,22 +22,20 @@ export default function Services() {
       icon: "bug_report",
       color: "from-[#9333ea] to-[#a855f7]",
     },
-  ]
+  ];
 
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.15 },
     },
-  }
+  };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } },
+  };
 
   return (
     <motion.div
@@ -50,23 +43,35 @@ export default function Services() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+      className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" 
     >
       {services.map((service, index) => (
         <motion.div
           key={index}
           variants={item}
-          className="bg-gray-100 dark:bg-gray-900 rounded-lg p-6 card-hover shadow-md"
+          whileHover={{
+            y: -5,
+            boxShadow: "0 10px 20px rgba(0, 0, 0, 0.15)",
+            transition: { duration: 0.3 },
+          }}
+          className="group relative bg-white/10 dark:bg-gray-900/10 backdrop-blur-lg rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300"
         >
           <div
-            className={`w-14 h-14 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center mb-6`}
-          >
-            <span className="material-icons text-white text-2xl">{service.icon}</span>
+            className={`absolute inset-0 bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
+          />
+          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-white/20 to-white/40 dark:from-gray-800/20 dark:to-gray-800/40 backdrop-blur-sm mb-4">
+            <span className={`material-icons text-xl bg-gradient-to-r ${service.color} bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300`}>
+              {service.icon}
+            </span>
           </div>
-          <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-          <p className="text-gray-700 dark:text-gray-300">{service.description}</p>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white font-heading">
+            {service.title}
+          </h3>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 font-body leading-relaxed">
+            {service.description}
+          </p>
         </motion.div>
       ))}
     </motion.div>
-  )
+  );
 }

@@ -367,53 +367,94 @@ const translations = {
       services: [
         {
           title: "Desenvolvimento Web",
-          description: "Criamos sites e aplicações web modernas, responsivas e otimizadas para resultados.",
-          features: ["Sites institucionais", "E-commerce", "Sistemas web", "Aplicações SaaS", "Integrações com APIs"],
+          description: "Criamos sites e aplicações web modernas, escaláveis e pensadas para transformar visitas em resultados reais.",
+          features: [
+            "Sites corporativos inteligentes",
+            "Plataformas de e-commerce de alta conversão",
+            "Plataformas web personalizadas",
+            "Aplicações SaaS",
+            "Integração de APIs e microsserviços"
+          ],
         },
         {
           title: "Desenvolvimento Mobile",
-          description: "Aplicativos nativos e híbridos para iOS e Android que entregam experiências excepcionais.",
-          features: ["Apps iOS", "Apps Android", "Aplicativos híbridos", "PWA", "Manutenção e suporte"],
+          description: "Desenvolvemos apps nativas e híbridas que não apenas funcionam — encantam seus usuários desde o primeiro toque.",
+          features: [
+            "Apps iOS de alta performance",
+            "Aplicativos Android escaláveis",
+            "Aplicações híbridas (Flutter, React Native)",
+            "Progressive Web Apps (PWAs)",
+            "Manutenção evolutiva e suporte técnico"
+          ],
         },
         {
-          title: "Desenvolvimento de Software",
-          description: "Soluções de software sob medida para necessidades específicas do seu negócio.",
-          features: ["Sistemas ERP", "CRM", "Automação de processos", "Integrações", "Migração de sistemas"],
+          title: "Desenvolvimento de Software Sob Medida",
+          description: "Transformamos processos e sonhos de negócio em soluções tecnológicas personalizadas que crescem com você.",
+          features: [
+            "Sistemas ERP personalizados",
+            "Soluções CRM integradas ao seu negócio",
+            "Automação de processos críticos",
+            "Integrações entre sistemas e plataformas",
+            "Migrações tecnológicas sem dor de cabeça"
+          ],
         },
       ],
+      
       process: {
         title: "Nosso Processo",
         steps: [
           {
             title: "Descoberta",
-            description: "Entendemos suas necessidades e objetivos de negócio.",
+            description: "Mergulhamos no seu negócio para entender o que realmente importa.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=descoberta",
+            example: "Workshops interativos, entrevistas com stakeholders e mapeamento de dores e oportunidades.",
+            material_icon: "search",
           },
           {
             title: "Planejamento",
-            description: "Definimos escopo, tecnologias e cronograma do projeto.",
+            description: "Traçamos o plano de voo: estratégia, tecnologia e prazos alinhados com sua visão.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=planejamento",
+            example: "Definição de MVP, tecnologias, cronograma e responsabilidades. Menos achismo, mais precisão.",
+            material_icon: "event_note",
           },
           {
             title: "Design",
-            description: "Criamos wireframes e protótipos para visualização da solução.",
+            description: "Transformamos ideias em experiências visuais incríveis e intuitivas.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=design",
+            example: "Criação de wireframes, protótipos navegáveis e validações com usuários reais.",
+            material_icon: "brush",
           },
           {
             title: "Desenvolvimento",
-            description: "Codificamos a solução utilizando as melhores práticas e tecnologias.",
+            description: "Codificamos com excelência, agilidade e foco total em qualidade.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=desenvolvimento",
+            example: "Implementação modular, revisões de código contínuas e integração contínua (CI/CD).",
+            material_icon: "code",
           },
           {
             title: "Testes",
-            description: "Realizamos testes rigorosos para garantir qualidade e performance.",
+            description: "Testamos como se o sucesso dependesse disso. (Spoiler: depende mesmo.)",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=testes",
+            example: "Testes unitários, funcionais, de performance e UX com usuários reais.",
+            material_icon: "check_circle",
           },
           {
             title: "Lançamento",
-            description: "Implementamos a solução em ambiente de produção.",
+            description: "Chegou a hora de decolar: colocamos sua solução no ar com todo o suporte necessário.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=lancamento",
+            example: "Deploy assistido, monitoramento inicial e ajustes finos pós-lançamento.",
+            material_icon: "rocket_launch",
           },
           {
-            title: "Suporte",
-            description: "Oferecemos suporte contínuo e melhorias após o lançamento.",
+            title: "Suporte e Evolução",
+            description: "Acompanhamos o crescimento e propomos melhorias contínuas. Parceiros, não apenas fornecedores.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=suporte",
+            example: "Suporte técnico, atualizações evolutivas e análises de uso para novas oportunidades.",
+            material_icon: "support",
           },
         ],
       },
+      
       technologies: {
         title: "Tecnologias",
         description: "Trabalhamos com as tecnologias mais modernas e eficientes do mercado.",
@@ -880,53 +921,94 @@ const translations = {
       services: [
         {
           title: "Desarrollo Web",
-          description: "Creamos sitios y aplicaciones web modernas, responsivas y optimizadas para resultados.",
-          features: ["Corporate websites", "E-commerce", "Web systems", "SaaS applications", "API integrations"],
+          description: "Construimos sitios y aplicaciones web modernos, escalables y pensados para convertir visitas en resultados reales.",
+          features: [
+            "Sitios corporativos inteligentes",
+            "E-commerce de alta conversión",
+            "Plataformas web personalizadas",
+            "Aplicaciones SaaS",
+            "Integración de APIs y microservicios"
+          ],
         },
         {
-          title: "Desarrollo Móvil",
-          description: "Aplicaciones nativas e híbridas para iOS y Android que entregan experiencias excepcionales.",
-          features: ["Apps iOS", "Apps Android", "Aplicaciones híbridas", "PWA", "Mantenimiento y soporte"],
+          title: "Desarrollo Mobile",
+          description: "Creamos apps nativas e híbridas que no solo funcionan: enamoran a tus usuarios desde el primer toque.",
+          features: [
+            "Apps iOS de alto rendimiento",
+            "Apps Android adaptables a escala",
+            "Aplicaciones híbridas (Flutter, React Native)",
+            "Progressive Web Apps (PWAs)",
+            "Mantenimiento evolutivo y soporte técnico"
+          ],
         },
         {
-          title: "Desarrollo de Software",
-          description: "Soluciones de software a medida para necesidades específicas de tu negocio.",
-          features: ["Sistemas ERP", "CRM", "Automatización de procesos", "Integraciones", "Migración de sistemas"],
+          title: "Desarrollo de Software a Medida",
+          description: "Transformamos procesos y sueños empresariales en soluciones tecnológicas a medida que escalan contigo.",
+          features: [
+            "Sistemas ERP personalizados",
+            "CRM integrados a tu operación",
+            "Automatización de procesos críticos",
+            "Integraciones entre sistemas y plataformas",
+            "Migraciones tecnológicas sin traumas"
+          ],
         },
       ],
+      
       process: {
         title: "Nuestro Proceso",
         steps: [
           {
             title: "Descubrimiento",
-            description: "Entendemos tus necesidades y objetivos de negocio.",
+            description: "Nos sumergimos en tu negocio para entender lo que realmente importa.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=descubrimiento",
+            example: "Workshops interactivos, entrevistas con stakeholders y mapeo de necesidades y oportunidades.",
+            material_icon: "search",
           },
           {
             title: "Planificación",
-            description: "Definimos alcance, tecnologías y cronograma del proyecto.",
+            description: "Trazamos el plan de vuelo: estrategia, tecnología y plazos alineados a tu visión.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=planificacion",
+            example: "Definición de MVP, tecnologías, cronograma y asignación de responsabilidades. Menos suposiciones, más precisión.",
+            material_icon: "event_note",
           },
           {
             title: "Diseño",
-            description: "Creamos wireframes y prototipos para visualización de la solución.",
+            description: "Transformamos ideas en experiencias visuales increíbles e intuitivas.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=diseno",
+            example: "Creación de wireframes, prototipos navegables y validaciones con usuarios reales.",
+            material_icon: "brush",
           },
           {
             title: "Desarrollo",
-            description: "Codificamos la solución utilizando las mejores prácticas y tecnologías.",
+            description: "Codificamos con excelencia, agilidad y un enfoque total en la calidad.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=desarrollo",
+            example: "Implementación modular, revisiones de código constantes e integración continua (CI/CD).",
+            material_icon: "code",
           },
           {
             title: "Pruebas",
-            description: "Realizamos pruebas rigurosas para garantizar calidad y rendimiento.",
+            description: "Probamos como si el éxito dependiera de ello. (Spoiler: depende).",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=pruebas",
+            example: "Tests unitarios, funcionales, de rendimiento y UX con usuarios reales.",
+            material_icon: "check_circle",
           },
           {
             title: "Lanzamiento",
-            description: "Implementamos la solución en ambiente de producción.",
+            description: "Llegó el momento de despegar: llevamos tu solución a producción con soporte completo.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=lanzamiento",
+            example: "Deploy asistido, monitoreo inicial y ajustes de post-lanzamiento.",
+            material_icon: "rocket_launch",
           },
           {
-            title: "Soporte",
-            description: "Ofrecemos soporte continuo y mejoras después del lanzamiento.",
+            title: "Soporte y Evolución",
+            description: "Acompañamos tu crecimiento y proponemos mejoras continuas. Socios, no simples proveedores.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=soporte",
+            example: "Soporte técnico, actualizaciones evolutivas y análisis de uso para nuevas oportunidades.",
+            material_icon: "support",
           },
         ],
       },
+      
       technologies: {
         title: "Tecnologías",
         description: "Trabajamos con las tecnologías más modernas y eficientes del mercado.",
@@ -1371,53 +1453,94 @@ const translations = {
       services: [
         {
           title: "Web Development",
-          description: "We create modern, responsive, and results-optimized websites and web applications.",
-          features: ["Corporate websites", "E-commerce", "Web systems", "SaaS applications", "API integrations"],
+          description: "We build modern, scalable websites and web applications designed to turn visits into real results.",
+          features: [
+            "Smart corporate websites",
+            "High-conversion e-commerce platforms",
+            "Custom web platforms",
+            "SaaS applications",
+            "API and microservices integrations"
+          ],
         },
         {
           title: "Mobile Development",
-          description: "Native and hybrid apps for iOS and Android that deliver exceptional experiences.",
-          features: ["iOS apps", "Android apps", "Hybrid apps", "PWA", "Maintenance and support"],
+          description: "We create native and hybrid apps that don't just work — they delight your users from the first tap.",
+          features: [
+            "High-performance iOS apps",
+            "Scalable Android applications",
+            "Hybrid apps (Flutter, React Native)",
+            "Progressive Web Apps (PWAs)",
+            "Ongoing maintenance and technical support"
+          ],
         },
         {
-          title: "Software Development",
-          description: "Custom software solutions for your business's specific needs.",
-          features: ["ERP systems", "CRM", "Process automation", "Integrations", "System migration"],
+          title: "Custom Software Development",
+          description: "We turn business processes and entrepreneurial dreams into tailor-made tech solutions that grow with you.",
+          features: [
+            "Custom ERP systems",
+            "CRM solutions tailored to your operation",
+            "Critical process automation",
+            "System and platform integrations",
+            "Smooth, stress-free tech migrations"
+          ],
         },
       ],
+      
       process: {
         title: "Our Process",
         steps: [
           {
             title: "Discovery",
-            description: "We understand your business needs and objectives.",
+            description: "We dive deep into your business to understand what truly matters.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=discovery",
+            example: "Interactive workshops, stakeholder interviews, and mapping needs and opportunities.",
+            material_icon: "search",
           },
           {
             title: "Planning",
-            description: "We define the project scope, technologies, and timeline.",
+            description: "We chart the flight plan: strategy, technology, and timelines aligned with your vision.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=planning",
+            example: "Defining MVP, technologies, timeline, and responsibilities. Less guessing, more accuracy.",
+            material_icon: "event_note",
           },
           {
             title: "Design",
-            description: "We create wireframes and prototypes to visualize the solution.",
+            description: "We turn ideas into incredible, intuitive visual experiences.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=design",
+            example: "Creating wireframes, navigable prototypes, and validations with real users.",
+            material_icon: "brush",
           },
           {
             title: "Development",
-            description: "We code the solution using best practices and technologies.",
+            description: "We code with excellence, agility, and a laser focus on quality.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=development",
+            example: "Modular implementation, continuous code reviews, and CI/CD pipelines.",
+            material_icon: "code",
           },
           {
             title: "Testing",
-            description: "We perform rigorous testing to ensure quality and performance.",
+            description: "We test like success depends on it. (Spoiler: it does.)",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=testing",
+            example: "Unit, functional, performance, and UX testing with real users.",
+            material_icon: "check_circle",
           },
           {
             title: "Launch",
-            description: "We implement the solution in a production environment.",
+            description: "Time to take off: we deploy your solution with full support.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=launch",
+            example: "Assisted deploy, initial monitoring, and fine-tuning post-launch.",
+            material_icon: "rocket_launch",
           },
           {
-            title: "Support",
-            description: "We offer ongoing support and improvements after launch.",
+            title: "Support and Growth",
+            description: "We support your growth and suggest continuous improvements. Partners, not just vendors.",
+            imageUrl: "https://nimbusventures.vc/placeholder/600x300/121212/fff&text=support",
+            example: "Technical support, evolutionary updates, and usage analytics for new opportunities.",
+            material_icon: "support",
           },
         ],
       },
+      
       technologies: {
         title: "Technologies",
         description: "We work with the most modern and efficient technologies in the market.",

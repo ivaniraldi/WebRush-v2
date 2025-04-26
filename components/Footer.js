@@ -45,32 +45,48 @@ export default function Footer() {
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Facebook"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-square-facebook text-2xl"></i>
+                <i
+                  className="fa-brands fa-square-facebook text-2xl"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a
                 href="https://www.instagram.com/webrush_br/"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Instagram"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-instagram text-2xl"></i>
+                <i
+                  className="fa-brands fa-instagram text-2xl"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/webrush-brasil/"
+                href="https://www.linkedin.com/company/webrush-brasil/"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="LinkedIn"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-linkedin text-2xl"></i>
+                <i
+                  className="fa-brands fa-linkedin text-2xl"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a
                 href="https://x.com/WebRushBrasil"
                 className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Twitter"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-square-x-twitter text-2xl"></i>
+                <i
+                  className="fa-brands fa-square-x-twitter text-2xl"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </motion.div>
@@ -161,23 +177,23 @@ export default function Footer() {
         <div className="border-t border-gray-300 dark:border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0 font-body">
-              &copy; {currentYear} WebRush Brasil. {t.footer.rights}
+              © {currentYear} WebRush Brasil. {t.footer.rights}
             </p>
-            <div className="hidden flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="#"
+                href="/terminos"
                 className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.terms}
               </Link>
               <Link
-                href="#"
+                href="/privacidad"
                 className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.privacy}
               </Link>
               <Link
-                href="#"
+                href="/cookies"
                 className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.cookies}
