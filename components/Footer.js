@@ -138,10 +138,10 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
-                  location_on
+                  policy
                 </span>
                 <span className="text-gray-300 font-body">
-                  Santa Catarina, Brasil
+                 CNPJ: 57.983.669/0001-68
                 </span>
               </li>
               <li className="flex items-start">
@@ -200,7 +200,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0 font-body">
-              © {currentYear} WebRush Brasil. {t.footer.rights}
+              © {currentYear} WebRush Brasil® & PyN Soluçoes em TI LTDA.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
