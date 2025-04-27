@@ -92,7 +92,7 @@ export default function QualityAssurancePage() {
                 transition={{ duration: 0.5, delay: 0.9 }}
               >
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="https://itsmoney.com.br/_next/image?url=https%3A%2F%2Fitsmoney-admin.investimentosblue.com.br%2Fapp%2Fuploads%2F2024%2F04%2Fqa-quality-assurance-carreira_its-money.webp&w=1920&q=75"
                   alt="Quality Assurance Process"
                   className="rounded-lg shadow-md w-full h-auto"
                 />

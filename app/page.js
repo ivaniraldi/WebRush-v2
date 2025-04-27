@@ -13,14 +13,17 @@ import { useLanguage } from "@/context/LanguageContext";
 import translations from "@/translations";
 import PageTransition from "@/components/PageTransition";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
   const { language } = useLanguage();
   const t = translations[language];
 
+
+
   return (
     <PageTransition>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen relative">
         <ParallaxHero
           backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
           height="100vh"
@@ -71,7 +74,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="container mx-auto px-4 py-12"  
+    className="relative container mx-auto px-4 py-12"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -30,7 +30,7 @@ export default function ProcessSection({ translations }) {
   }, [isInView, controls]);
 
   return (
-    <section ref={sectionRef} className="mb-16 ">
+    <section ref={sectionRef} className=" ">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={controls}

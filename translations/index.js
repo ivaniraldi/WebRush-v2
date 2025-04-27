@@ -1,5 +1,8 @@
 const translations = {
   pt: {
+    meta: {
+      title: "WebRush Brasil - Seu sucesso, nossa missão tecnológica"
+    },
     nav: {
       home: "Home",
       services: "Soluções",
@@ -550,6 +553,9 @@ const translations = {
     },
   },
   es: {
+    meta: {
+      title: "WebRush Brasil - Tu éxito, nuestra misión tecnológica",
+    },
     nav: {
       home: "Inicio",
       services: "Soluciones",
@@ -1104,6 +1110,9 @@ const translations = {
     },
   },
   en: {
+    meta: {
+      title: "WebRush Brasil - Your Success, Our Technological Mission",
+    },
     nav: {
       home: "Home",
       services: "Solutions",

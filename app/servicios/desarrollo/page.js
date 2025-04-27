@@ -17,8 +17,6 @@ export default function DesarrolloPage() {
   const t = translations[language] || translations.pt; // Fallback to Portuguese
   const cardRef = useRef(null);
 
-
-
   // Animation variants for cards
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -48,12 +46,12 @@ export default function DesarrolloPage() {
 
       case "phone_iphone":
         return (
-          <span className="material-icons text-white text-xl">phone_iphone</span>
+          <span className="material-icons text-white text-xl">
+            phone_iphone
+          </span>
         );
       case "monitor":
-        return (
-          <span className="material-icons text-white text-xl">code</span>
-        );
+        return <span className="material-icons text-white text-xl">code</span>;
       default:
         return <span className="material-icons text-white text-xl">star</span>;
     }
@@ -149,26 +147,7 @@ export default function DesarrolloPage() {
             <ProcessSection translations={t.development.process} />
 
             {/* Technologies Section */}
-            <TechnologiesSection translations={t.development.technologies} />
-
-            {/* CTA Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
-              className="text-center mt-12 sm:mt-16"
-            >
-              <Link
-                href="/contacto"
-                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-gradient-to-r from-[#a855f7] to-[#2563eb] text-white font-medium font-body text-sm sm:text-base hover:from-[#9333ea] hover:to-[#2563eb] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 transition-all duration-300"
-                aria-label={t.contactCTA.button}
-              >
-                {t.contactCTA.button}
-                <span className="material-icons ml-2 text-lg">
-                  arrow_forward
-                </span>
-              </Link>
-            </motion.div>
+            {/* <TechnologiesSection translations={t.development.technologies} /> */}
           </div>
         </section>
 

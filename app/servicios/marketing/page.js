@@ -82,10 +82,6 @@ export default function MarketingPage() {
                     )}
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-2 text-white">{plan.name}</h3>
-                      <div className="mb-4">
-                        <span className="text-3xl font-bold text-white">{plan.price}</span>
-                        {plan.period && <span className="text-gray-300">/{plan.period}</span>}
-                      </div>
                       <ul className="space-y-3 mb-6">
                         {plan.features.map((feature, i) => (
                           <li key={i} className="flex items-start">

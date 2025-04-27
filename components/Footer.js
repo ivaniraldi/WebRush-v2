@@ -204,13 +204,13 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="/terminos"
+                href="/use-terms"
                 className="text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.terms}
               </Link>
               <Link
-                href="/privacidad"
+                href="/privacy-pol"
                 className="text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.privacy}

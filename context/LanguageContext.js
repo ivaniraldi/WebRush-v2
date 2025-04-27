@@ -1,6 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useEffect } from "react"
+import translations from "@/translations"
 
 const LanguageContext = createContext()
 
@@ -13,10 +14,17 @@ export function LanguageProvider({ children }) {
     if (["pt", "es", "en"].includes(browserLang)) {
       setLanguage(browserLang)
     }
+   
   }, [])
+  let t = translations[language]
+  useEffect(() => {
+    document.title = `${t.meta.title}`
+ }, [t])
 
   return <LanguageContext.Provider value={{ language, setLanguage }}>{children}</LanguageContext.Provider>
 }
+
+
 
 export function useLanguage() {
   const context = useContext(LanguageContext)

@@ -10,6 +10,7 @@ import CustomCursor from "@/components/CustomCursor"
 import { useEffect } from "react"
 import { register } from "./registerSW"
 import ChatIa from "@/components/ChatIa"
+import CookieNotification from "@/components/CookieNotification"
 
 export default function ClientLayout({ children }) {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function ClientLayout({ children }) {
         <Footer />
         <CustomCursor />
         <ChatIa />
+        <CookieNotification />
       </ThemeProvider>
     </LanguageProvider>
   )

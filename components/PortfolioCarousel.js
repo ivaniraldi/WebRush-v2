@@ -267,7 +267,7 @@ export default function PortfolioCarousel() {
   )
 
   return (
-    <section className="py-12 md:py-16 relative overflow-hidden">
+    <section className="py-4 md:py-6 relative overflow-hidden">
       {/* Glassmorphism background elements using only Tailwind */}
       <div className="absolute top-20 left-1/4 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl opacity-30" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl opacity-30" />
@@ -281,7 +281,7 @@ export default function PortfolioCarousel() {
           viewport={{ once: true }}
           className="text-center mb-10 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent font-heading">
+          <h2 className="text-3xl py-1 md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent font-heading">
             {t.portfolio.title}
           </h2>
           <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto font-body">{t.portfolio.subtitle}</p>
