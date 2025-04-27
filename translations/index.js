@@ -11,7 +11,7 @@ const translations = {
       contact: "Fale Conosco",
       serviceSections: {
         development: "Desenvolvimento de Software",
-        marketing: "Marketing Digital e Performance",
+        marketing: "Marketing Estratégico",
         qa: "Garantia de Qualidade",
       },
     },
@@ -261,9 +261,9 @@ const translations = {
       messageLabel: "Mensagem",
       selectService: "Selecione um serviço",
       services: {
-        webDev: "Desenvolvimento Web",
-        marketing: "Marketing Digital",
-        seo: "SEO",
+        webDev: "Software",
+        marketing: "Marketing",
+        seo: "Quality Assurance",
         other: "Outro",
       },
       submitButton: "Enviar Mensagem",
@@ -274,7 +274,7 @@ const translations = {
     },
     footer: {
       description:
-        "Somos uma empresa especializada em desenvolvimento de software, engenharia, garantia de qualidade e marketing digital.",
+        "Somos uma empresa especializada em desenvolvimento de software, engenharia, garantia de qualidade e marketing estratégico.",
       specialization:
         "Oferecemos soluções completas para impulsionar seu negócio no mundo digital, desde desenvolvimento de software até estratégias de marketing.",
       services: "Serviços",
@@ -564,7 +564,7 @@ const translations = {
       contact: "Contáctanos",
       serviceSections: {
         development: "Desarrollo de Software",
-        marketing: "Marketing Digital y Performance",
+        marketing: "Marketing Estratégico",
         qa: "Aseguramiento de Calidad",
       },
     },
@@ -824,15 +824,15 @@ const translations = {
       submitting: "Enviando...",
       successMessage: "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
       services: {
-        webDev: "Desarrollo Web",
-        marketing: "Marketing Digital",
-        seo: "SEO",
+        webDev: "Software",
+        marketing: "Marketing",
+        seo: "Quality Assurance",
         other: "Otro"
       }
     },
     footer: {
       description:
-        "Somos una empresa especializada en desarrollo de software, ingeniería, aseguramiento de calidad y marketing digital.",
+        "Somos una empresa especializada en desarrollo de software, ingeniería, aseguramiento de calidad y marketing estratégico.",
       specialization:
         "Ofrecemos soluciones completas para impulsar tu negocio en el mundo digital, desde desarrollo de software hasta estrategias de marketing.",
       services: "Servicios",
@@ -1121,7 +1121,7 @@ const translations = {
       contact: "Contact Us",
       serviceSections: {
         development: "Software Development",
-        marketing: "Digital Marketing & Performance",
+        marketing: "Strategic Marketing",
         qa: "Quality Assurance",
       },
     },
@@ -1262,7 +1262,7 @@ const translations = {
       ],
       planButton: "Get Started Now",
       carouselTitle: "Our Services",
-      carouselDescription: "Learn more about our digital marketing services.",
+      carouselDescription: "Learn more about our strategic marketing services.",
       carousel: [
         {
           title: "Social Media Management",
@@ -1371,15 +1371,15 @@ const translations = {
       submitting: "Sending...",
       successMessage: "Message sent successfully! We will get back to you soon.",
       services: {
-        webDev: "Web Development",
-        marketing: "Digital Marketing",
-        seo: "SEO",
+        webDev: "Software",
+        marketing: "Marketing",
+        seo: "Quality Assurance",
         other: "Other"
       }
     },
     footer: {
       description:
-        "We are a company specialized in software development, engineering, quality assurance, and digital marketing.",
+        "We are a company specialized in software development, engineering, quality assurance, and strategic marketing.",
       specialization:
         "We offer complete solutions to boost your business in the digital world, from software development to marketing strategies.",
       services: "Services",
@@ -1387,7 +1387,7 @@ const translations = {
       mobileAppDev: "Mobile App Development",
       pwaDev: "Software & Mobile App Development",
       pcAppDev: "PC App Development",
-      digitalMarketing: "Digital Marketing",
+      digitalMarketing: "Strategic Marketing",
       organicTraffic: "Organic Traffic",
       paidTraffic: "Paid Traffic",
       qaServices: "QA Services",

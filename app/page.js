@@ -70,7 +70,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </ParallaxHero>
-        <motion.section
+        <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -91,7 +91,7 @@ export default function Home() {
       </motion.div>
 
       <Services t={t} />
-    </motion.section>
+    </motion.div>
 
         {/* <LogoMarquee /> */}
         <TextMarquee />
