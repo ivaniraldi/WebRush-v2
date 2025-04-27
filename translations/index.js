@@ -28,14 +28,17 @@ const translations = {
         {
           title: "Desenvolvimento de Software e Apps Móveis",
           description: "Soluções de software personalizadas, aplicativos móveis e plataformas web escaláveis adaptadas às suas necessidades.",
+          icon: "code",
         },
         {
           title: "Marketing Digital",
           description: "Campanhas estratégicas de marketing digital para aumentar sua presença online e gerar leads.",
+          icon: "trending_up",
         },
         {
           title: "Garantia de Qualidade",
           description: "Testes rigorosos e garantia de qualidade para assegurar que seu software e aplicativos sejam confiáveis, seguros e de alto desempenho.",
+          icon: "verified",
         },
       ],
     },
@@ -368,6 +371,7 @@ const translations = {
         {
           title: "Desenvolvimento Web",
           description: "Criamos sites e aplicações web modernas, escaláveis e pensadas para transformar visitas em resultados reais.",
+          icon: "code",
           features: [
             "Sites corporativos inteligentes",
             "Plataformas de e-commerce de alta conversão",
@@ -379,6 +383,7 @@ const translations = {
         {
           title: "Desenvolvimento Mobile",
           description: "Desenvolvemos apps nativas e híbridas que não apenas funcionam — encantam seus usuários desde o primeiro toque.",
+          icon: "phone_iphone",
           features: [
             "Apps iOS de alta performance",
             "Aplicativos Android escaláveis",
@@ -390,6 +395,7 @@ const translations = {
         {
           title: "Desenvolvimento de Software Sob Medida",
           description: "Transformamos processos e sonhos de negócio em soluções tecnológicas personalizadas que crescem com você.",
+          icon: "monitor",
           features: [
             "Sistemas ERP personalizados",
             "Soluções CRM integradas ao seu negócio",
@@ -572,14 +578,17 @@ const translations = {
         {
           title: "Desarrollo de Software y Apps Móviles",
           description: "Soluciones de software personalizadas, aplicaciones móviles y plataformas web escalables adaptadas a tus necesidades.",
+          icon: "code",
         },
         {
           title: "Marketing Digital",
           description: "Campañas estratégicas de marketing digital para aumentar tu presencia online y generar leads.",
+          icon: "trending_up",
         },
         {
           title: "Aseguramiento de Calidad",
           description: "Pruebas rigurosas y aseguramiento de calidad para garantizar que tu software y aplicaciones sean fiables, seguros y de alto rendimiento.",
+          icon: "verified",
         },
       ],
     },
@@ -922,6 +931,7 @@ const translations = {
         {
           title: "Desarrollo Web",
           description: "Construimos sitios y aplicaciones web modernos, escalables y pensados para convertir visitas en resultados reales.",
+          icon: "code",
           features: [
             "Sitios corporativos inteligentes",
             "E-commerce de alta conversión",
@@ -933,6 +943,7 @@ const translations = {
         {
           title: "Desarrollo Mobile",
           description: "Creamos apps nativas e híbridas que no solo funcionan: enamoran a tus usuarios desde el primer toque.",
+          icon: "phone_iphone",
           features: [
             "Apps iOS de alto rendimiento",
             "Apps Android adaptables a escala",
@@ -944,6 +955,7 @@ const translations = {
         {
           title: "Desarrollo de Software a Medida",
           description: "Transformamos procesos y sueños empresariales en soluciones tecnológicas a medida que escalan contigo.",
+          icon: "monitor",
           features: [
             "Sistemas ERP personalizados",
             "CRM integrados a tu operación",
@@ -1120,14 +1132,17 @@ const translations = {
         {
           title: "Software & Mobile App Development",
           description: "Custom software solutions, mobile applications, and scalable web platforms tailored to your business needs.",
+          icon: "code",
         },
         {
           title: "Digital Marketing",
           description: "Strategic digital marketing campaigns to enhance your online presence and drive lead generation.",
+          icon: "trending_up",
         },
         {
           title: "Quality Assurance",
           description: "Rigorous testing and quality assurance to ensure your software and applications are reliable, secure, and high-performing.",
+          icon: "verified",
         },
       ],
     },
@@ -1454,6 +1469,7 @@ const translations = {
         {
           title: "Web Development",
           description: "We build modern, scalable websites and web applications designed to turn visits into real results.",
+          icon: "code",
           features: [
             "Smart corporate websites",
             "High-conversion e-commerce platforms",
@@ -1465,6 +1481,7 @@ const translations = {
         {
           title: "Mobile Development",
           description: "We create native and hybrid apps that don't just work — they delight your users from the first tap.",
+          icon: "phone_iphone",
           features: [
             "High-performance iOS apps",
             "Scalable Android applications",
@@ -1476,6 +1493,7 @@ const translations = {
         {
           title: "Custom Software Development",
           description: "We turn business processes and entrepreneurial dreams into tailor-made tech solutions that grow with you.",
+          icon: "monitor",
           features: [
             "Custom ERP systems",
             "CRM solutions tailored to your operation",

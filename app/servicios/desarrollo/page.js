@@ -9,10 +9,15 @@ import PageTransition from "@/components/PageTransition";
 import ParallaxHero from "@/components/ParallaxHero";
 import ProcessSection from "@/components/ProcessSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
+import { useRef } from "react";
+import PortfolioCarousel from "@/components/PortfolioCarousel";
 
 export default function DesarrolloPage() {
   const { language } = useLanguage();
   const t = translations[language] || translations.pt; // Fallback to Portuguese
+  const cardRef = useRef(null);
+
+
 
   // Animation variants for cards
   const cardVariants = {
@@ -34,6 +39,24 @@ export default function DesarrolloPage() {
       transition: { duration: 0.3, delay: 1.3 + i * 0.05, ease: "easeOut" },
     }),
     hover: { scale: 1.1, backgroundColor: "#1e293b", color: "#ffffff" },
+  };
+
+  const changeIcon = (iconName) => {
+    switch (iconName) {
+      case "code":
+        return <span className="material-icons text-white text-xl">web</span>;
+
+      case "phone_iphone":
+        return (
+          <span className="material-icons text-white text-xl">phone_iphone</span>
+        );
+      case "monitor":
+        return (
+          <span className="material-icons text-white text-xl">code</span>
+        );
+      default:
+        return <span className="material-icons text-white text-xl">star</span>;
+    }
   };
 
   return (
@@ -62,11 +85,12 @@ export default function DesarrolloPage() {
                   <motion.div
                     key={index}
                     custom={index}
+                    ref={cardRef}
                     variants={cardVariants}
                     initial="hidden"
                     animate="visible"
                     whileHover="hover"
-                    className="relative card-bg rounded-xl p-6 sm:p-7 gradient-border shadow-lg card-hover overflow-hidden group"
+                    className="relative card-bg rounded-lg p-6 sm:p-7 gradient-border shadow-lg card-hover overflow-hidden group"
                     role="article"
                     aria-labelledby={`service-title-${index}`}
                   >
@@ -76,9 +100,7 @@ export default function DesarrolloPage() {
                     {/* Ícono superior */}
                     <div className="flex justify-center mb-5">
                       <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] flex items-center justify-center shadow-md">
-                        <span className="material-icons text-white text-xl">
-                          star
-                        </span>
+                        {changeIcon(service.icon)}
                       </div>
                     </div>
 
@@ -119,6 +141,9 @@ export default function DesarrolloPage() {
                 ))}
               </div>
             </motion.div>
+
+            {/* Portfolio Section */}
+            <PortfolioCarousel />
 
             {/* Process Section - Replaced with ProcessSection */}
             <ProcessSection translations={t.development.process} />

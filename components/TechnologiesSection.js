@@ -212,7 +212,7 @@ export default function TechnologiesSection() {
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4"
         >
           {Object.entries(techData).map(([techName, techInfo], i) => (
             <motion.div

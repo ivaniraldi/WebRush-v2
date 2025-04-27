@@ -17,6 +17,16 @@ export default function Footer() {
     { name: t.footer.qualityControl, href: "/servicios/quality-assurance" },
   ];
 
+  const traducedMessage = () => {
+    if (language === "es") {
+      return "Hola, estoy interesado en los servicios de WebRush Brasil.";
+    } else if (language === "en") {
+      return "Hello, I am interested in WebRush Brasil services.";
+    } else {
+      return "Olá, estou interessado nos serviços da WebRush Brasil.";
+    }
+  };
+
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 pt-16 pb-8 transition-colors duration-300">
       <div className="container mx-auto px-4">
@@ -139,7 +149,12 @@ export default function Footer() {
                   email
                 </span>
                 <span className="text-gray-700 dark:text-gray-300 font-body">
-                  contato@webrushbrasil.com.br
+                  <a
+                    href="mailto:contato@webrushbrasil.com.br"
+                    className="hover:text-[#a855f7] transition-colors font-body text-sm underline"
+                  >
+                    contato@webrushbrasil.com.br
+                  </a>
                 </span>
               </li>
               <li className="flex items-start">
@@ -147,7 +162,14 @@ export default function Footer() {
                   phone_in_talk
                 </span>
                 <span className="text-gray-700 dark:text-gray-300 font-body">
-                  +55 (48) 9205-8069
+                  <a
+                    href={`https://wa.me/554892058069?text=${encodeURIComponent(traducedMessage())}`}
+                    className="hover:text-[#a855f7] transition-colors font-body text-sm underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +55 (48) 9205-8069
+                  </a>
                 </span>
               </li>
               <li className="flex items-start">
@@ -171,6 +193,7 @@ export default function Footer() {
                 </span>
               </Link>
             </div>
+            <div className="mt-4"></div>
           </motion.div>
         </div>
 
