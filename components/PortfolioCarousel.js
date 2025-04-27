@@ -141,6 +141,26 @@ const projects = [
     image: "https://i.imgur.com/U0z8kZq.png",
     url: "https://portfolio-portfolio-cfrk.onrender.com/",
   },
+  {
+    title: "E-Boutique",
+    description: {
+      es: "Tienda virtual completa con experiencia de compra fluida y segura.",
+      en: "Complete virtual store with smooth and secure shopping experience.",
+      pt: "Loja virtual completa com experiência de compra fluida e segura.",
+    },
+    utility: {
+      es: "Expande tu alcance y vende 24/7 sin limitaciones geográficas.",
+      en: "Expands your reach and sells 24/7 without geographical limitations.",
+      pt: "Expande seu alcance e vende 24/7 sem limitações geográficas.",
+    },
+    examples: {
+      es: "Tienda de productos artesanales, boutique de moda sostenible, tienda de productos gourmet.",
+      en: "Artisanal product store, sustainable fashion boutique, gourmet product shop.",
+      pt: "Loja de produtos artesanais, boutique de moda sustentável, loja de produtos gourmet.",
+    },
+    image: "https://i.imgur.com/Ordv9Kq.png",
+    url: "https://lv-imports.vercel.app/",
+  },
 ]
 
 export default function PortfolioCarousel() {
