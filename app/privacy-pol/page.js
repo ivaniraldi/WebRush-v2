@@ -146,7 +146,7 @@ export default function PrivacyPolicy() {
         <ParallaxHero
           title={t.privacy.title}
           subtitle={t.privacy.subtitle}
-          backgroundImage="´/images/privacy_1.webp"
+          backgroundImage="/images/privacy_1.webp"
           height="60vh"
           overlayOpacity={0.6}
         />
