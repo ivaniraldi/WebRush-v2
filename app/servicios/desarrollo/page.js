@@ -64,7 +64,7 @@ export default function DesarrolloPage() {
         <ParallaxHero
           title={t.development.title}
           subtitle={t.development.description}
-          backgroundImage="./images/software_1.webp"
+          backgroundImage="/images/software_1.webp"
           height="70vh"
           overlayOpacity={0.5}
         />

@@ -25,7 +25,7 @@ export default function Home() {
     <PageTransition>
       <div className="flex flex-col min-h-screen relative">
         <ParallaxHero
-          backgroundImage="./images/hero.avif"
+          backgroundImage="/images/hero.avif"
           height="100vh"
         >
           <motion.h1

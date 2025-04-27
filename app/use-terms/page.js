@@ -146,7 +146,7 @@ export default function TermsAndConditions() {
         <ParallaxHero
           title={t.terms.title}
           subtitle={t.terms.subtitle}
-          backgroundImage="./images/terms_1.avif"
+          backgroundImage="/images/terms_1.avif"
           height="60vh"
           overlayOpacity={0.6}
         />

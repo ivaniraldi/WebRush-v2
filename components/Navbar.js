@@ -115,7 +115,7 @@ export default function Navbar() {
               className="relative z-[1010]"
             >
               <img
-                src="./images/logo.webp"
+                src="/images/logo.webp"
                 alt="WebRush Brasil Logo"
                 className="h-7 my-3 md:my-0 md:h-12 invert" // Siempre invertido para tema oscuro
               />

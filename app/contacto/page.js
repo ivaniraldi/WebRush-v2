@@ -74,7 +74,7 @@ export default function ContactPage() {
         <ParallaxHero
           title={t.title}
           subtitle={t.description}
-          backgroundImage="./images/contacto_1.webp"
+          backgroundImage="/images/contacto_1.webp"
           height="70vh" // Responsive height
           overlayOpacity={0.5}
         />

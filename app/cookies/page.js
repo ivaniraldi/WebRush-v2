@@ -146,7 +146,7 @@ export default function CookiesPolicy() {
         <ParallaxHero
           title={t.cookies.title}
           subtitle={t.cookies.subtitle}
-          backgroundImage="./images/cookies_1.webp"
+          backgroundImage="/images/cookies_1.webp"
           height="60vh"
           overlayOpacity={0.6}
         />

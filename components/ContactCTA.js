@@ -16,7 +16,7 @@ export default function ContactCTA() {
         <div
           className="absolute inset-0 bg-gradient-to-r from-[#a855f7]/20 to-[#2563eb]/20 z-20"
           style={{
-            backgroundImage: "url('./images/cta.webp')",
+            backgroundImage: "url('/images/cta.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

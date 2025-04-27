@@ -44,7 +44,7 @@ export default function SobreNosotrosPage() {
         <ParallaxHero
           title={t.aboutUs.title}
           subtitle={t.aboutUs.description}
-          backgroundImage="./images/about_1.webp"
+          backgroundImage="/images/about_1.webp"
           height="70vh"
         />
 
@@ -62,7 +62,7 @@ export default function SobreNosotrosPage() {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-[#a855f7]/10 to-[#2563eb]/10 rounded-xl -z-10" />
                     <img
-                      src="./images/about_2.webp"
+                      src="/images/about_2.webp"
                       alt="Oficina de WebRush Brasil en Santa Catarina"
                       width={1024}
                       height={656}
