@@ -20,7 +20,7 @@ const translations = {
       cliques: "NOSSA MISSÃO",
       emConexoes: "TECNOLÓGICA",
       description:
-        "Somos uma empresa especializada em desenvolvimento de software, engenharia, garantia de qualidade e marketing digital, localizada em Santa Catarina, Brasil.",
+        "Somos uma empresa especializada em desenvolvimento de software, engenharia, garantia de qualidade e marketing estratégico, localizada em Santa Catarina, Brasil.",
       ctaButton: "Fale Conosco",
       secondaryButton: "Nossos Serviços",
     },
@@ -34,8 +34,8 @@ const translations = {
           icon: "code",
         },
         {
-          title: "Marketing Digital",
-          description: "Campanhas estratégicas de marketing digital para aumentar sua presença online e gerar leads.",
+          title: "Marketing Estratégico",
+          description: "Campanhas estratégicas de marketing para aumentar sua presença online e gerar leads.",
           icon: "trending_up",
         },
         {
@@ -282,7 +282,7 @@ const translations = {
       mobileAppDev: "Desenvolvimento de Apps Móveis",
       pwaDev: "Desenvolvimento de software",
       pcAppDev: "Desenvolvimento de Apps para PC",
-      digitalMarketing: "Marketing Digital",
+      digitalMarketing: "Marketing Estratégico",
       organicTraffic: "Tráfego Orgânico",
       paidTraffic: "Tráfego Pago",
       qaServices: "Serviços de QA",
@@ -573,7 +573,7 @@ const translations = {
       cliques: "NUESTRA MISIÓN",
       emConexoes: "TECNOLÓGICA",
       description:
-        "Somos una empresa especializada en desarrollo de software, ingeniería, aseguramiento de calidad y marketing digital, ubicada en Santa Catarina, Brasil.",
+        "Somos una empresa especializada en desarrollo de software, ingeniería, aseguramiento de calidad y marketing estratégico, ubicada en Santa Catarina, Brasil.",
       ctaButton: "Contáctanos",
       secondaryButton: "Nuestros Servicios",
     },
@@ -587,8 +587,8 @@ const translations = {
           icon: "code",
         },
         {
-          title: "Marketing Digital",
-          description: "Campañas estratégicas de marketing digital para aumentar tu presencia online y generar leads.",
+          title: "Marketing Estratégico",
+          description: "Campañas estratégicas de marketing para aumentar tu presencia online y generar leads.",
           icon: "trending_up",
         },
         {
@@ -715,7 +715,7 @@ const translations = {
       ],
       planButton: "Contratar Ahora",
       carouselTitle: "Nuestros Servicios",
-      carouselDescription: "Conoce más sobre nuestros servicios de marketing digital.",
+      carouselDescription: "Conoce más sobre nuestros servicios de marketing.",
       carousel: [
         {
           title: "Gestión de Redes Sociales",
@@ -840,7 +840,7 @@ const translations = {
       mobileAppDev: "Desarrollo de Apps Móviles",
       pwaDev: "Desarrollo de Software",
       pcAppDev: "Desarrollo de Apps para PC",
-      digitalMarketing: "Marketing Digital",
+      digitalMarketing: "Marketing Estratégico",
       organicTraffic: "Tráfico Orgánico",
       paidTraffic: "Tráfico Pago",
       qaServices: "Servicios de QA",
@@ -1130,7 +1130,7 @@ const translations = {
       cliques: "IS OUR",
       emConexoes: "TECHNOLOGICAL MISSION",
       description:
-        "We are a company specialized in software development, engineering, quality assurance, and digital marketing, located in Santa Catarina, Brazil.",
+        "We are a company specialized in software development, engineering, quality assurance, and strategic marketing, located in Santa Catarina, Brazil.",
       ctaButton: "Contact Us",
       secondaryButton: "Our Services",
     },
