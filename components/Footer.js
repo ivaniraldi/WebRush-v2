@@ -28,7 +28,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 pt-16 pb-8 transition-colors duration-300">
+    <footer className="bg-gray-900 pt-16 pb-8 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <motion.div
@@ -42,17 +42,17 @@ export default function Footer() {
               <span className="text-2xl font-bold gradient-text font-heading">
                 WebRush
               </span>
-              <span className="text-2xl font-bold ml-1 text-gray-900 dark:text-white font-heading">
+              <span className="text-2xl font-bold ml-1 text-white font-heading">
                 Brasil
               </span>
             </Link>
-            <p className="text-gray-700 dark:text-gray-300 mb-4 font-body">
+            <p className="text-gray-300 mb-4 font-body">
               {t.footer.description}
             </p>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/people/WebRush-Brasil/61574912904790/"
-                className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
+                className="text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.instagram.com/webrush_br/"
-                className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
+                className="text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.linkedin.com/company/webrush-brasil/"
-                className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
+                className="text-white hover:text-[#a855f7] transition-colors"
                 aria-label="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +88,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://x.com/WebRushBrasil"
-                className="text-gray-700 dark:text-white hover:text-[#a855f7] transition-colors"
+                className="text-white hover:text-[#a855f7] transition-colors"
                 aria-label="Twitter"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,7 +108,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white font-heading">
+            <h3 className="text-lg font-bold mb-4 text-white font-heading">
               {t.footer.services}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
@@ -116,7 +116,7 @@ export default function Footer() {
                 <div key={index} className="mb-2">
                   <Link
                     href={service.href}
-                    className="text-gray-700 dark:text-gray-300 hover:text-[#a855f7] transition-colors font-body text-sm"
+                    className="text-gray-300 hover:text-[#a855f7] transition-colors font-body text-sm"
                   >
                     {service.name}
                   </Link>
@@ -132,7 +132,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white font-heading">
+            <h3 className="text-lg font-bold mb-4 text-white font-heading">
               {t.footer.contact}
             </h3>
             <ul className="space-y-2">
@@ -140,7 +140,7 @@ export default function Footer() {
                 <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
                   location_on
                 </span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">
+                <span className="text-gray-300 font-body">
                   Santa Catarina, Brasil
                 </span>
               </li>
@@ -148,7 +148,7 @@ export default function Footer() {
                 <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
                   email
                 </span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">
+                <span className="text-gray-300 font-body">
                   <a
                     href="mailto:contato@webrushbrasil.com.br"
                     className="hover:text-[#a855f7] transition-colors font-body text-sm underline"
@@ -161,7 +161,7 @@ export default function Footer() {
                 <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
                   phone_in_talk
                 </span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">
+                <span className="text-gray-300 font-body">
                   <a
                     href={`https://wa.me/554892058069?text=${encodeURIComponent(traducedMessage())}`}
                     className="hover:text-[#a855f7] transition-colors font-body text-sm underline"
@@ -176,7 +176,7 @@ export default function Footer() {
                 <span className="material-icons mr-2 text-[#a855f7] mt-0.5">
                   schedule
                 </span>
-                <span className="text-gray-700 dark:text-gray-300 font-body">
+                <span className="text-gray-300 font-body">
                   {t.footer.hours}
                 </span>
               </li>
@@ -197,27 +197,27 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        <div className="border-t border-gray-300 dark:border-gray-800 pt-8">
+        <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0 font-body">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0 font-body">
               © {currentYear} WebRush Brasil. {t.footer.rights}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/terminos"
-                className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
+                className="text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.terms}
               </Link>
               <Link
                 href="/privacidad"
-                className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
+                className="text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.privacy}
               </Link>
               <Link
                 href="/cookies"
-                className="text-gray-600 dark:text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
+                className="text-gray-400 hover:text-[#a855f7] text-sm transition-colors font-body"
               >
                 {t.footer.cookies}
               </Link>

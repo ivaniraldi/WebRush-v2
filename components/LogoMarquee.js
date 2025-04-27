@@ -33,7 +33,7 @@ export default function LogoMarquee() {
   const allLogos = [...logos, ...logos]
 
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-900 overflow-hidden">
+    <section className="py-16 bg-gray-900 overflow-hidden">
       <div className="container mx-auto px-4 mb-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,10 +42,10 @@ export default function LogoMarquee() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white font-heading">
+          <h2 className="text-3xl font-bold mb-4 text-white font-heading">
             {t.logoMarquee?.title || "Trusted by Leading Brands"}
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto font-body">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto font-body">
             {t.logoMarquee?.description || "Companies of all sizes trust WebRush Brasil for their digital needs."}
           </p>
         </motion.div>

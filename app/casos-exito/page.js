@@ -42,7 +42,7 @@ export default function CasosExitoPage() {
           height="70vh"
         />
 
-        <section className="py-16 bg-white dark:bg-[#0f172a]">
+        <section className="py-16 bg-[#0f172a]">
           <div className="container mx-auto px-4">
             <div className="space-y-16">
               {t.successCases.caseStudies.map((caseStudy, index) => (
@@ -54,7 +54,7 @@ export default function CasosExitoPage() {
                   className="grid md:grid-cols-2 gap-8 items-center"
                 >
                   <div className={`order-2 ${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
-                    <div className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden shadow-md">
+                    <div className="bg-gray-900 rounded-lg overflow-hidden shadow-md">
                       <img
                         src="https://i.imgur.com/31hCmSk.jpeg"
                         alt={caseStudy.title}
@@ -64,17 +64,17 @@ export default function CasosExitoPage() {
                   </div>
                   <div className={`order-1 ${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
                     <span className="text-sm font-medium text-[#a855f7] font-body">{caseStudy.client}</span>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white font-heading">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white font-heading">
                       {caseStudy.title}
                     </h2>
-                    <p className="text-gray-700 dark:text-gray-300 mb-6 font-body">{caseStudy.description}</p>
+                    <p className="text-gray-300 mb-6 font-body">{caseStudy.description}</p>
                     <div className="space-y-2">
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white font-heading">Resultados:</h3>
+                      <h3 className="text-lg font-semibold text-white font-heading">Resultados:</h3>
                       <ul className="space-y-2">
                         {caseStudy.results.map((result, i) => (
                           <li key={i} className="flex items-start">
                             <span className="material-icons text-[#a855f7] mr-2 text-sm">check_circle</span>
-                            <span className="text-gray-700 dark:text-gray-300 font-body">{result}</span>
+                            <span className="text-gray-300 font-body">{result}</span>
                           </li>
                         ))}
                       </ul>
@@ -90,10 +90,10 @@ export default function CasosExitoPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-20"
             >
-              <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white font-heading">
+              <h2 className="text-3xl font-bold mb-8 text-center text-white font-heading">
                 {t.successCases.testimonials}
               </h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-center mb-12 font-body">
+              <p className="text-lg text-gray-300 max-w-3xl mx-auto text-center mb-12 font-body">
                 {t.successCases.testimonialsDescription}
               </p>
 
@@ -104,7 +104,7 @@ export default function CasosExitoPage() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    className="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-md"
+                    className="bg-gray-900 p-6 rounded-lg shadow-md"
                   >
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
@@ -115,11 +115,11 @@ export default function CasosExitoPage() {
                         />
                       </div>
                       <div>
-                        <h3 className="font-bold text-gray-900 dark:text-white font-heading">{testimonial.name}</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 font-body">{testimonial.company}</p>
+                        <h3 className="font-bold text-white font-heading">{testimonial.name}</h3>
+                        <p className="text-sm text-gray-400 font-body">{testimonial.company}</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 italic font-body">"{testimonial.text}"</p>
+                    <p className="text-gray-300 italic font-body">"{testimonial.text}"</p>
                   </motion.div>
                 ))}
               </div>

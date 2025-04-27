@@ -133,7 +133,7 @@ export default function TextMarquee() {
   const handleMouseLeave = () => setMarqueeSpeed(30);
 
   return (
-    <section className="py-20 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section className="py-20 relative overflow-hidden bg-gradient-to-br  from-gray-900 to-gray-800">
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-full h-full bg-purple-500/20 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4"></div>
         <div className="absolute bottom-0 right-0 w-full h-full bg-blue-500/20 rounded-full blur-3xl translate-x-1/4 translate-y-1/4"></div>
@@ -150,7 +150,7 @@ export default function TextMarquee() {
           <h2 className="text-3xl md:text-4xl font-bold mb-5 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
             {title}
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
             {description}
           </p>
         </motion.div>
@@ -162,7 +162,7 @@ export default function TextMarquee() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="absolute inset-0 bg-white/20 dark:bg-gray-800/20 backdrop-blur-xl border-y border-white/30 dark:border-gray-700/30 shadow-lg"></div>
+        <div className="absolute inset-0 bg-gray-800/20 backdrop-blur-xl border-y border-gray-700/30 shadow-lg"></div>
 
         <motion.div
           className="relative flex items-center whitespace-nowrap"
@@ -189,13 +189,13 @@ export default function TextMarquee() {
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
               className={`relative mx-4 md:mx-6 flex items-center gap-3 px-5 py-3.5 
-                bg-white/15 dark:bg-white/5 backdrop-blur-md rounded-full 
-                border border-white/30 dark:border-gray-600/30 
+                bg-white/5 backdrop-blur-md rounded-full 
+                border border-gray-600/30 
                 shadow-lg hover:shadow-xl
-                text-gray-900 dark:text-white 
+                text-white 
                 font-medium text-sm md:text-base flex-shrink-0 
                 transition-all duration-300
-                ${hoveredIndex === index ? "bg-white/25 dark:bg-white/10 z-10" : "z-0"}
+                ${hoveredIndex === index ? "bg-white/10 z-10" : "z-0"}
               `}
             >
               <div className={`p-1.5 rounded-full ${feature.color} flex items-center justify-center`}>

@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
 
       </head>
       <body
-        className={`${montserrat.variable} ${poppins.variable} font-sans min-h-screen flex flex-col bg-white dark:bg-[#0f172a] text-gray-900 dark:text-white transition-colors duration-300`}
+        className={`${montserrat.variable} ${poppins.variable} font-sans min-h-screen flex flex-col bg-[#0f172a] text-white transition-colors duration-300`}
       >
         <ClientLayout>{children}</ClientLayout>
       </body>

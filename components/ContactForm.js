@@ -79,8 +79,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg p-0 md:p-6 sm:p-8 rounded-2xl  border-0  border-gray-200/50 dark:border-gray-700/50">
-      <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-gray-900 dark:text-white font-heading tracking-tight">
+    <div className="bg-gray-900/80 backdrop-blur-lg p-0 md:p-6 sm:p-8 rounded-2xl  border-0  border-gray-700/50">
+      <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-white font-heading tracking-tight">
         {t.contact.formTitle}
       </h2>
 
@@ -134,7 +134,7 @@ export default function ContactForm() {
               value={formData.service}
               onChange={handleChange}
               required
-              className="peer w-full px-3 sm:px-4 pt-5 sm:pt-6 pb-1 sm:pb-2 bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-900 dark:text-white appearance-none cursor-pointer text-sm sm:text-base"
+              className="peer w-full px-3 sm:px-4 pt-5 sm:pt-6 pb-1 sm:pb-2 bg-transparent border :border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white appearance-none cursor-pointer text-sm sm:text-base"
             >
               <option value="" disabled hidden>
                 {t.contact.servicePlaceholder || ""}
@@ -146,13 +146,13 @@ export default function ContactForm() {
             </select>
             <label
               htmlFor="service"
-              className={`absolute left-3 sm:left-4 text-gray-500 dark:text-gray-400 transition-all text-xs sm:text-sm
+              className={`absolute left-3 sm:left-4 text-gray-400 transition-all text-xs sm:text-sm
                 ${formData.service ? 'top-2 sm:top-3 text-xs text-purple-500' : 'top-1/2 -translate-y-1/2 peer-focus:top-2 sm:peer-focus:top-3 peer-focus:text-xs peer-focus:text-purple-500'}
               `}
             >
               {t.contact.serviceLabel || "Service of Interest"}
             </label>
-            <ChevronDown className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-4 sm:w-5 h-4 sm:h-5 text-gray-500 dark:text-gray-400 pointer-events-none" />
+            <ChevronDown className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-4 sm:w-5 h-4 sm:h-5 text-gray-400 pointer-events-none" />
             {errors.service && <p className="mt-1 text-xs sm:text-sm text-red-500">{errors.service}</p>}
           </div>
 
@@ -208,7 +208,7 @@ function FormField({ id, type, name, label, value, onChange, error, required = f
           required={required}
           rows={rows}
           placeholder=" "
-          className="peer w-full px-3 sm:px-4 pt-5 sm:pt-6 pb-1 sm:pb-2 bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-900 dark:text-white text-sm sm:text-base"
+          className="peer w-full px-3 sm:px-4 pt-5 sm:pt-6 pb-1 sm:pb-2 bg-transparent border :border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white text-sm sm:text-base"
         />
       ) : (
         <input
@@ -219,12 +219,12 @@ function FormField({ id, type, name, label, value, onChange, error, required = f
           onChange={onChange}
           required={required}
           placeholder=" "
-          className="peer w-full px-3 sm:px-4 pt-5 sm:pt-6 pb-1 sm:pb-2 bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-900 dark:text-white text-sm sm:text-base"
+          className="peer w-full px-3 sm:px-4 pt-5 sm:pt-6 pb-1 sm:pb-2 bg-transparent border :border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white text-sm sm:text-base"
         />
       )}
       <label
         htmlFor={id}
-        className={`absolute left-3 sm:left-4 text-gray-500 dark:text-gray-400 transition-all text-xs sm:text-sm
+        className={`absolute left-3 sm:left-4 text-gray-400 transition-all text-xs sm:text-sm
           ${value ? 'top-2 sm:top-3 text-xs text-purple-500' : 'top-1/2 -translate-y-1/2 peer-focus:top-2 sm:peer-focus:top-3 peer-focus:text-xs peer-focus:text-purple-500'}
         `}
       >

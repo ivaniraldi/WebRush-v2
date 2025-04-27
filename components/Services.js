@@ -54,20 +54,20 @@ export default function Services({ t }) {
             boxShadow: "0 10px 20px rgba(0, 0, 0, 0.15)",
             transition: { duration: 0.3 },
           }}
-          className="group relative bg-white/10 dark:bg-gray-900/10 backdrop-blur-lg rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300"
+          className="group relative bg-gray-900/10 backdrop-blur-lg rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300"
         >
           <div
             className={`absolute inset-0 bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
           />
-          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-white/20 to-white/40 dark:from-gray-800/20 dark:to-gray-800/40 backdrop-blur-sm mb-4">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-gray-800/20 to-gray-800/40 backdrop-blur-sm mb-4">
             <span className={`material-icons text-xl bg-gradient-to-r ${service.color} bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300`}>
               {service.icon}
             </span>
           </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white font-heading">
+          <h3 className="text-lg font-semibold text-white font-heading">
             {service.title}
           </h3>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 font-body leading-relaxed">
+          <p className="mt-2 text-sm text-gray-400 font-body leading-relaxed">
             {service.description}
           </p>
         </motion.div>

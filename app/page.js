@@ -82,7 +82,7 @@ export default function Home() {
         <h2 className="text-4xl py-1 md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">
           {t.services.title}
         </h2>
-        <p className="mt-3 text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto font-body">
+        <p className="mt-3 text-base md:text-lg text-gray-400 max-w-xl mx-auto font-body">
           {t.services.description}
         </p>
       </motion.div>

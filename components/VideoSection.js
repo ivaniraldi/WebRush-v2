@@ -30,7 +30,7 @@ export default function VideoSection() {
   ]
 
   return (
-    <section className="py-20 bg-white dark:bg-[#0f172a]">
+    <section className="py-20 bg-[#0f172a]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,10 +39,10 @@ export default function VideoSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white font-heading">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white font-heading">
             {t.videoSection?.title || "Learn More About Our Services"}
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-body">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto font-body">
             {t.videoSection?.description ||
               "Watch our videos to learn more about how we can help your business grow online."}
           </p>
@@ -56,7 +56,7 @@ export default function VideoSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg"
+              className="bg-gray-900 rounded-lg overflow-hidden shadow-lg"
             >
               <div className="relative aspect-video cursor-pointer group" onClick={() => setIsPlaying(index)}>
                 {isPlaying === index ? (
@@ -86,8 +86,8 @@ export default function VideoSection() {
                 )}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white font-heading">{video.title}</h3>
-                <p className="text-gray-700 dark:text-gray-300 font-body">{video.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-white font-heading">{video.title}</h3>
+                <p className="text-gray-300 font-body">{video.description}</p>
               </div>
             </motion.div>
           ))}

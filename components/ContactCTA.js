@@ -10,7 +10,7 @@ export default function ContactCTA() {
   const t = translations[language]
 
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-900 relative overflow-hidden transition-colors duration-300">
+    <section className="py-20 bg-gray-900 relative overflow-hidden transition-colors duration-300">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-white/80 dark:bg-[#0f172a]/80 z-10"></div>
         <div
@@ -31,8 +31,8 @@ export default function ContactCTA() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">{t.contactCTA.title}</h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">{t.contactCTA.description}</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{t.contactCTA.title}</h2>
+          <p className="text-lg text-gray-300 mb-8">{t.contactCTA.description}</p>
           <Link
             href="/contato"
             className="px-8 py-3 rounded-md bg-gradient-to-r from-[#a855f7] to-[#2563eb] text-white font-medium hover:opacity-90 transition-opacity inline-flex items-center"
