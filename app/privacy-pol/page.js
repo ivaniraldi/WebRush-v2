@@ -146,7 +146,7 @@ export default function PrivacyPolicy() {
         <ParallaxHero
           title={t.privacy.title}
           subtitle={t.privacy.subtitle}
-          backgroundImage="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          backgroundImage="´./images/privacy_1.webp"
           height="60vh"
           overlayOpacity={0.6}
         />

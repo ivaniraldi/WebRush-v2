@@ -44,7 +44,7 @@ export default function SobreNosotrosPage() {
         <ParallaxHero
           title={t.aboutUs.title}
           subtitle={t.aboutUs.description}
-          backgroundImage="https://www.atomogaming.com/wp-content/uploads/2023/08/destacada-semana-4.jpg"
+          backgroundImage="./images/about_1.webp"
           height="70vh"
         />
 
@@ -62,7 +62,7 @@ export default function SobreNosotrosPage() {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-[#a855f7]/10 to-[#2563eb]/10 rounded-xl -z-10" />
                     <img
-                      src="https://www.startechup.com/wp-content/uploads/1-1024x656.jpg"
+                      src="./images/about_2.webp"
                       alt="Oficina de WebRush Brasil en Santa Catarina"
                       width={1024}
                       height={656}

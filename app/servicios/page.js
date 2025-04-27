@@ -134,7 +134,7 @@ export default function ServicesPage() {
         <ParallaxHero
           title={t.services.title}
           subtitle={t.services.description}
-          backgroundImage="https://icorp.com.mx/wp-content/uploads/2015/05/3-Tecnologias-para-la-Gestion-de-Servicios-de-TI-scaled.webp"
+          backgroundImage="./images/services_1.webp"
           height="70vh"
           className="text-center"
         >

@@ -9,7 +9,7 @@ const Chat = () => {
   const [hasNewMessage, setHasNewMessage] = useState(false);
   const chatEndRef = useRef(null);
   const { language } = useLanguage();
-  const apiKey = "AIzaSyDSIiHrZbniajYLcLX4stj7MEjSCxY0XaM";
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY; // Asegúrate de tener tu API Key en las variables de entorno
 
   // Traducciones
   const translations = {

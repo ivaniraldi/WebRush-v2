@@ -58,7 +58,7 @@ const projects = [
       en: "Culinary magazine, travel blog, local news portal.",
       pt: "Revista gastronômica, blog de viagens, portal de notícias locais.",
     },
-    image: "https://i.imgur.com/2VYp3iA.png",
+    image: "./images/project_covers/blog.webp",
     url: "https://urbanblog.onrender.com/",
   },
   {
@@ -78,7 +78,7 @@ const projects = [
       en: "Mobile app launch, architecture studio, consulting service.",
       pt: "Lançamento de app móvel, estúdio de arquitetura, serviço de consultoria.",
     },
-    image: "https://i.imgur.com/wQpr0ve.png",
+    image: "./images/project_covers/landing.webp",
     url: "https://landingpage-portfolio.onrender.com/",
   },
   {
@@ -98,7 +98,7 @@ const projects = [
       en: "Artisanal product store, sustainable fashion boutique, gourmet product shop.",
       pt: "Loja de produtos artesanais, boutique de moda sustentável, loja de produtos gourmet.",
     },
-    image: "https://i.imgur.com/vWJ3EfK.png",
+    image: "./images/project_covers/ecommerce.webp",
     url: "https://ecommerce-portfolio-8cbo.onrender.com/",
   },
   {
@@ -118,7 +118,7 @@ const projects = [
       en: "Restaurants, cafes, bars, etc.",
       pt: "Restaurantes, cafetarias, bares, lanchonetes, etc.",
     },
-    image: "https://i.imgur.com/4sA23tk.png",
+    image: "./images/project_covers/menu.webp",
     url: "https://cardapio-digital-wrbrasil.vercel.app/",
   },
   {
@@ -138,7 +138,7 @@ const projects = [
       en: "Professional photographer, design studio, independent architect.",
       pt: "Fotógrafo profissional, estúdio de design, arquiteto independente.",
     },
-    image: "https://i.imgur.com/U0z8kZq.png",
+    image: "./images/project_covers/portfolios.webp",
     url: "https://portfolio-portfolio-cfrk.onrender.com/",
   },
 ]
